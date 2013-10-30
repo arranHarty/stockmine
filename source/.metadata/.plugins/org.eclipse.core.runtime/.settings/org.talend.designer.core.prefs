@@ -1,4 +1,4 @@
-#Wed Oct 30 22:46:20 GMT 2013
+#Wed Oct 30 23:46:58 GMT 2013
 TalendEditorPaletteFactory.StateEDIFACT=1
 TalendEditorPaletteFactory.StateDB2=1
 TalendEditorPaletteFactory.StateInput=1
@@ -67,7 +67,6 @@ TalendEditorPaletteFactory.StateREST=1
 TalendEditorPaletteFactory.StateAlfresco=1
 TalendEditorPaletteFactory.StateSalesforce=1
 TalendEditorPaletteFactory.StateTeradata=1
-TalendEditorPaletteFactory.StateMongoDB=1
 TalendEditorPaletteFactory.StateProcessing=0
 TalendEditorPaletteFactory.StateFirebird=1
 TalendEditorPaletteFactory.StateCharts=1
