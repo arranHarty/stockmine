@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendProperties="http://www.talend.org/properties">
-  <TalendProperties:Project xmi:id="_HRjvEEDSEeOGibAg3FzzjQ" label="stockmine" description="" language="java" technicalLabel="STOCKMINE" local="true" author="_E66n0EDSEeOGibAg3FzzjQ" productVersion="Talend Open Studio for Data Integration-5.4.0.r110020" itemsRelationVersion="1.3">
+  <TalendProperties:Project xmi:id="_HRjvEEDSEeOGibAg3FzzjQ" label="stockmine" description="" language="java" technicalLabel="STOCKMINE" local="true" author="_E66n0EDSEeOGibAg3FzzjQ" productVersion="Talend Open Studio for Big Data-5.4.0.r110020" itemsRelationVersion="1.3">
     <technicalStatus xmi:id="_RiWCYEDSEeOGibAg3FzzjQ" label="development" code="DEV"/>
     <technicalStatus xmi:id="_RiWCYUDSEeOGibAg3FzzjQ" label="testing" code="TEST"/>
     <technicalStatus xmi:id="_RiWCYkDSEeOGibAg3FzzjQ" label="production" code="PROD"/>
@@ -189,18 +189,16 @@
         <elementParameter xmi:id="_YMUADkDSEeOGibAg3FzzjQ" field="TECHNICAL" name="PROPERTY_TYPE_IMPLICIT_CONTEXT:REPOSITORY_PROPERTY_TYPE" value="" contextMode="false"/>
       </parameters>
     </implicitContextSettings>
-    <ItemsRelations xmi:id="_sg-3cEDwEeOfA_gk2MO8Dw">
-      <baseItem xmi:id="_sg-3cUDwEeOfA_gk2MO8Dw" id="_8tThoEDbEeOfA_gk2MO8Dw" version="0.1" type="job"/>
-      <relatedItems xmi:id="_sg-3ckDwEeOfA_gk2MO8Dw" id="_lxox8EDtEeOfA_gk2MO8Dw" version="Latest" type="property"/>
-      <relatedItems xmi:id="_sg-3c0DwEeOfA_gk2MO8Dw" id="DataOperation" version="Latest" type="routine"/>
-      <relatedItems xmi:id="_sg-3dEDwEeOfA_gk2MO8Dw" id="Relational" version="Latest" type="routine"/>
-      <relatedItems xmi:id="_sg-3dUDwEeOfA_gk2MO8Dw" id="StringHandling" version="Latest" type="routine"/>
-      <relatedItems xmi:id="_sg-3dkDwEeOfA_gk2MO8Dw" id="Mathematical" version="Latest" type="routine"/>
-      <relatedItems xmi:id="_sg-3d0DwEeOfA_gk2MO8Dw" id="Numeric" version="Latest" type="routine"/>
-      <relatedItems xmi:id="_sg-3eEDwEeOfA_gk2MO8Dw" id="TalendString" version="Latest" type="routine"/>
-      <relatedItems xmi:id="_sg_egEDwEeOfA_gk2MO8Dw" id="TalendDataGenerator" version="Latest" type="routine"/>
-      <relatedItems xmi:id="_sg_egUDwEeOfA_gk2MO8Dw" id="TalendDate" version="Latest" type="routine"/>
-      <relatedItems xmi:id="_sg_egkDwEeOfA_gk2MO8Dw" id="_lxox8EDtEeOfA_gk2MO8Dw - metadata" version="Latest" type="schema"/>
+    <ItemsRelations xmi:id="_AJabEEGrEeOk_8J6LdcxmA">
+      <baseItem xmi:id="_AJabEUGrEeOk_8J6LdcxmA" id="_8tThoEDbEeOfA_gk2MO8Dw" version="0.1" type="job"/>
+      <relatedItems xmi:id="_AJabEkGrEeOk_8J6LdcxmA" id="DataOperation" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_AJabE0GrEeOk_8J6LdcxmA" id="Relational" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_AJabFEGrEeOk_8J6LdcxmA" id="StringHandling" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_AJabFUGrEeOk_8J6LdcxmA" id="Mathematical" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_AJabFkGrEeOk_8J6LdcxmA" id="Numeric" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_AJabF0GrEeOk_8J6LdcxmA" id="TalendString" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_AJabGEGrEeOk_8J6LdcxmA" id="TalendDataGenerator" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_AJabGUGrEeOk_8J6LdcxmA" id="TalendDate" version="Latest" type="routine"/>
     </ItemsRelations>
     <migrationTask xmi:id="_HRonkEDSEeOGibAg3FzzjQ" id="org.talend.designer.core.ui.preferences.migration.ChangeMysqlVersionForProjectSetting" breaks="5.2.0" version="5.1.3" status="ok"/>
     <migrationTask xmi:id="_HRonkUDSEeOGibAg3FzzjQ" id="org.talend.designer.core.ui.preferences.migration.ChangeOracleVersionForProjectSetting" breaks="5.2.0" version="5.2.1" status="ok"/>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendProperties="http://www.talend.org/properties">
+  <TalendProperties:Property xmi:id="_8tXMAEDbEeOfA_gk2MO8Dw" id="_8tThoEDbEeOfA_gk2MO8Dw" label="yahoo_finance_http_request" purpose="Pull stock data" creationDate="2013-10-29T21:51:56.733+0000" modificationDate="2013-10-30T22:36:22.623+0000" version="0.1" statusCode="DEV" item="_8tXMAkDbEeOfA_gk2MO8Dw" maxInformationLevel="ERROR" displayName="yahoo_finance_http_request">
+    <author href="../talend.project#_E66n0EDSEeOGibAg3FzzjQ"/>
+    <informations xmi:id="_CZZgsEGrEeOk_8J6LdcxmA" level="ERROR" text="stockmine cannot be resolved to a variable"/>
+    <informations xmi:id="_CZZgsUGrEeOk_8J6LdcxmA" level="ERROR" text="yahoo_finance cannot be resolved to a variable"/>
+    <informations xmi:id="_CZZgskGrEeOk_8J6LdcxmA" level="ERROR" text="The constructor Mongo(double, double, int) is undefined"/>
+    <informations xmi:id="_CZZgs0GrEeOk_8J6LdcxmA" level="ERROR" text="Syntax error on token &quot;.0&quot;, , expected"/>
+  </TalendProperties:Property>
+  <TalendProperties:ItemState xmi:id="_8tXMAUDbEeOfA_gk2MO8Dw" path="" locked="true" lockDate="2013-10-30T22:31:13.802+0000">
+    <locker href="../talend.project#_E66n0EDSEeOGibAg3FzzjQ"/>
+  </TalendProperties:ItemState>
+  <TalendProperties:ProcessItem xmi:id="_8tXMAkDbEeOfA_gk2MO8Dw" property="_8tXMAEDbEeOfA_gk2MO8Dw" state="_8tXMAUDbEeOfA_gk2MO8Dw">
+    <process href="yahoo_finance_http_request_0.1.item#/"/>
+  </TalendProperties:ProcessItem>
+</xmi:XMI>

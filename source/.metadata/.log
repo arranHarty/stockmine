@@ -270,3 +270,61 @@ Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -keyring /Users/arran
 !ENTRY org.talend.platform.logging 1 0 2013-10-30 00:36:05.776
 !MESSAGE 2013-10-30 00:36:05,775 INFO  org.talend.designer.core.runprocess.Processor  - Command line: java -Xms256M -Xmx1024M -Dfile.encoding=UTF-8 -cp /Users/arranhartgroves/Dropbox/thinkBA_employees/arran_hartgroves/deliverables/code/github/stockmine/source/.Java/lib/dom4j-1.6.1.jar:/Users/arranhartgroves/Dropbox/thinkBA_employees/arran_hartgroves/deliverables/code/github/stockmine/source/.Java/lib/talend_file_enhanced_20070724.jar:/Users/arranhartgroves/Dropbox/thinkBA_employees/arran_hartgroves/deliverables/code/github/stockmine/source/.Java/lib/talendcsv.jar:.:/Users/arranhartgroves/Dropbox/thinkBA_employees/arran_hartgroves/deliverables/code/github/stockmine/source/.Java/classes::/Users/arranhartgroves/Dropbox/thinkBA_employees/arran_hartgroves/deliverables/code/github/stockmine/source/.Java/lib: stockmine.yahoo_finance_http_request_0_1.yahoo_finance_http_request --context=Default --stat_port=3473
 
+!SESSION 2013-10-30 21:52:14.404 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.6.0_65
+java.vendor=Apple Inc.
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -keyring /Users/arranhartgroves/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -keyring /Users/arranhartgroves/.eclipse_keyring -showlocation
+
+!ENTRY org.talend.libraries.jasperreport 0 0 2013-10-30 21:52:16.824
+!MESSAGE one third party library file [/Applications/TOS_DI-r110020-V5.4.0/lib/java/jdt-compiler-3.1.1.jar] was not found, it is required for bundle [org.talend.libraries.jasperreport], please download it and place in [/Applications/TOS_DI-r110020-V5.4.0/lib/java]
+
+!ENTRY org.talend.platform.logging 1 0 2013-10-30 21:52:18.750
+!MESSAGE 2013-10-30 21:52:18,748 INFO  org.talend.repository.ui.login.LoginComposite  - validate updatesite...
+
+
+!ENTRY org.talend.platform.logging 1 0 2013-10-30 21:52:34.748
+!MESSAGE 2013-10-30 21:52:34,747 INFO  org.talend.core.repository.model.ProxyRepositoryFactory  - test@talend.com logged on stockmine
+
+
+!ENTRY org.talend.platform.logging 1 0 2013-10-30 21:52:35.649
+!MESSAGE 2013-10-30 21:52:35,649 INFO  org.talend.core.repository.ReadOnlyProjectConfirm  - ReadOnly confirm
+
+
+!ENTRY org.eclipse.core.net 1 0 2013-10-30 21:52:39.723
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+!SESSION 2013-10-30 22:30:50.403 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.6.0_65
+java.vendor=Apple Inc.
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -keyring /Users/arranhartgroves/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -keyring /Users/arranhartgroves/.eclipse_keyring -showlocation
+
+!ENTRY org.talend.platform.logging 1 0 2013-10-30 22:30:53.953
+!MESSAGE 2013-10-30 22:30:53,950 INFO  org.talend.repository.ui.login.LoginComposite  - validate updatesite...
+
+
+!ENTRY org.talend.platform.logging 1 0 2013-10-30 22:30:58.369
+!MESSAGE 2013-10-30 22:30:58,369 INFO  org.talend.core.repository.model.ProxyRepositoryFactory  - test@talend.com logged on stockmine
+
+
+!ENTRY org.talend.platform.logging 1 0 2013-10-30 22:30:59.039
+!MESSAGE 2013-10-30 22:30:59,039 INFO  org.talend.core.repository.ReadOnlyProjectConfirm  - ReadOnly confirm
+
+
+!ENTRY org.eclipse.core.net 1 0 2013-10-30 22:31:05.173
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.talend.designer.webservice 0 0 2013-10-30 22:31:05.465
+!MESSAGE one third party library file [/Applications/TOS_BD-r110020-V5.4.0/lib/java/jaxrpc.jar] was not found, it is required for bundle [org.talend.designer.webservice], please download it and place in [/Applications/TOS_BD-r110020-V5.4.0/lib/java]
+
+!ENTRY org.talend.platform.logging 1 0 2013-10-30 22:34:30.492
+!MESSAGE 2013-10-30 22:34:30,492 INFO  org.talend.designer.core.runprocess.Processor  - Command line: java -Xms256M -Xmx1024M -Dfile.encoding=UTF-8 -cp /Users/arranhartgroves/Dropbox/thinkBA_employees/arran_hartgroves/deliverables/code/github/stockmine/source/.Java/lib/commons-beanutils-1.8.3.jar:/Users/arranhartgroves/Dropbox/thinkBA_employees/arran_hartgroves/deliverables/code/github/stockmine/source/.Java/lib/commons-collections-3.2.1.jar:/Users/arranhartgroves/Dropbox/thinkBA_employees/arran_hartgroves/deliverables/code/github/stockmine/source/.Java/lib/commons-lang-2.6.jar:/Users/arranhartgroves/Dropbox/thinkBA_employees/arran_hartgroves/deliverables/code/github/stockmine/source/.Java/lib/commons-logging-1.1.1.jar:/Users/arranhartgroves/Dropbox/thinkBA_employees/arran_hartgroves/deliverables/code/github/stockmine/source/.Java/lib/dom4j-1.6.1.jar:/Users/arranhartgroves/Dropbox/thinkBA_employees/arran_hartgroves/deliverables/code/github/stockmine/source/.Java/lib/ezmorph-1.0.6.jar:/Users/arranhartgroves/Dropbox/thinkBA_employees/arran_hartgroves/deliverables/code/github/stockmine/source/.Java/lib/jaxen-1.1.1.jar:/Users/arranhartgroves/Dropbox/thinkBA_employees/arran_hartgroves/deliverables/code/github/stockmine/source/.Java/lib/json-lib-2.4-jdk15.jar:/Users/arranhartgroves/Dropbox/thinkBA_employees/arran_hartgroves/deliverables/code/github/stockmine/source/.Java/lib/mongo-java-driver-2.11.2.jar:/Users/arranhartgroves/Dropbox/thinkBA_employees/arran_hartgroves/deliverables/code/github/stockmine/source/.Java/lib/talend_file_enhanced_20070724.jar:/Users/arranhartgroves/Dropbox/thinkBA_employees/arran_hartgroves/deliverables/code/github/stockmine/source/.Java/lib/talendcsv.jar:/Users/arranhartgroves/Dropbox/thinkBA_employees/arran_hartgroves/deliverables/code/github/stockmine/source/.Java/lib/xom-1.2.7.jar:.:/Users/arranhartgroves/Dropbox/thinkBA_employees/arran_hartgroves/deliverables/code/github/stockmine/source/.Java/classes::/Users/arranhartgroves/Dropbox/thinkBA_employees/arran_hartgroves/deliverables/code/github/stockmine/source/.Java/lib: stockmine.yahoo_finance_http_request_0_1.yahoo_finance_http_request --context=Default --stat_port=3459
+
+
+!ENTRY org.talend.platform.logging 1 0 2013-10-30 22:44:53.834
+!MESSAGE 2013-10-30 22:44:53,833 INFO  org.talend.designer.core.runprocess.Processor  - Command line: java -Xms256M -Xmx1024M -Dfile.encoding=UTF-8 -cp /Users/arranhartgroves/Dropbox/thinkBA_employees/arran_hartgroves/deliverables/code/github/stockmine/source/.Java/lib/commons-beanutils-1.8.3.jar:/Users/arranhartgroves/Dropbox/thinkBA_employees/arran_hartgroves/deliverables/code/github/stockmine/source/.Java/lib/commons-collections-3.2.1.jar:/Users/arranhartgroves/Dropbox/thinkBA_employees/arran_hartgroves/deliverables/code/github/stockmine/source/.Java/lib/commons-lang-2.6.jar:/Users/arranhartgroves/Dropbox/thinkBA_employees/arran_hartgroves/deliverables/code/github/stockmine/source/.Java/lib/commons-logging-1.1.1.jar:/Users/arranhartgroves/Dropbox/thinkBA_employees/arran_hartgroves/deliverables/code/github/stockmine/source/.Java/lib/dom4j-1.6.1.jar:/Users/arranhartgroves/Dropbox/thinkBA_employees/arran_hartgroves/deliverables/code/github/stockmine/source/.Java/lib/ezmorph-1.0.6.jar:/Users/arranhartgroves/Dropbox/thinkBA_employees/arran_hartgroves/deliverables/code/github/stockmine/source/.Java/lib/jaxen-1.1.1.jar:/Users/arranhartgroves/Dropbox/thinkBA_employees/arran_hartgroves/deliverables/code/github/stockmine/source/.Java/lib/json-lib-2.4-jdk15.jar:/Users/arranhartgroves/Dropbox/thinkBA_employees/arran_hartgroves/deliverables/code/github/stockmine/source/.Java/lib/mongo-java-driver-2.11.2.jar:/Users/arranhartgroves/Dropbox/thinkBA_employees/arran_hartgroves/deliverables/code/github/stockmine/source/.Java/lib/talend_file_enhanced_20070724.jar:/Users/arranhartgroves/Dropbox/thinkBA_employees/arran_hartgroves/deliverables/code/github/stockmine/source/.Java/lib/talendcsv.jar:/Users/arranhartgroves/Dropbox/thinkBA_employees/arran_hartgroves/deliverables/code/github/stockmine/source/.Java/lib/xom-1.2.7.jar:.:/Users/arranhartgroves/Dropbox/thinkBA_employees/arran_hartgroves/deliverables/code/github/stockmine/source/.Java/classes::/Users/arranhartgroves/Dropbox/thinkBA_employees/arran_hartgroves/deliverables/code/github/stockmine/source/.Java/lib: stockmine.yahoo_finance_http_request_0_1.yahoo_finance_http_request --context=Default --stat_port=3446
+

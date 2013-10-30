@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.talend.librariesmanager.ui.wizards.AcceptModuleLicensesWizard.LicensessPage">
+		<item value="300" key="ListSashWeight"/>
+		<item value="700" key="LicenseSashWeight"/>
+	</section>
+</section>

@@ -1,0 +1,176 @@
+package org.talend.designer.codegen.translators.processing.hadoop;
+
+import org.talend.core.model.process.INode;
+import org.talend.core.model.process.IConnection;
+import org.talend.core.model.process.ElementParameterParser;
+import org.talend.designer.codegen.config.CodeGeneratorArgument;
+import java.util.List;
+import java.util.Map;
+
+public class TPigSortMainJava
+{
+  protected static String nl;
+  public static synchronized TPigSortMainJava create(String lineSeparator)
+  {
+    nl = lineSeparator;
+    TPigSortMainJava result = new TPigSortMainJava();
+    nl = null;
+    return result;
+  }
+
+  public final String NL = nl == null ? (System.getProperties().getProperty("line.separator")) : nl;
+  protected final String TEXT_1 = "";
+  protected final String TEXT_2 = NL + NL + "\tStringBuilder sb_";
+  protected final String TEXT_3 = " = new StringBuilder();";
+  protected final String TEXT_4 = NL + "\t\tsb_";
+  protected final String TEXT_5 = ".append(\"";
+  protected final String TEXT_6 = "_";
+  protected final String TEXT_7 = "_RESULT = ORDER ";
+  protected final String TEXT_8 = "_";
+  protected final String TEXT_9 = "_RESULT BY \");" + NL + "\t\t";
+  protected final String TEXT_10 = NL + "\t\t\t\tsb_";
+  protected final String TEXT_11 = ".append(\",\");";
+  protected final String TEXT_12 = NL + "\t\t\tsb_";
+  protected final String TEXT_13 = ".append(\"";
+  protected final String TEXT_14 = " ";
+  protected final String TEXT_15 = "\");";
+  protected final String TEXT_16 = NL + "\t\t\tsb_";
+  protected final String TEXT_17 = ".append(\" PARALLEL ";
+  protected final String TEXT_18 = "\");";
+  protected final String TEXT_19 = "\t\t" + NL + "\t\tsb_";
+  protected final String TEXT_20 = ".append(\";\");";
+  protected final String TEXT_21 = NL + "\t\t\tpigServer_";
+  protected final String TEXT_22 = ".registerQuery(sb_";
+  protected final String TEXT_23 = ".toString());";
+  protected final String TEXT_24 = NL + "        \tpl_";
+  protected final String TEXT_25 = " = new Object[2];" + NL + "        \tpl_";
+  protected final String TEXT_26 = "[0] = \"query\";" + NL + "        \tpl_";
+  protected final String TEXT_27 = "[1] = sb_";
+  protected final String TEXT_28 = ".toString();" + NL + "        \tpigScript_";
+  protected final String TEXT_29 = ".add(pl_";
+  protected final String TEXT_30 = ");";
+  protected final String TEXT_31 = NL + "\t\t" + NL + "\t\t" + NL + "\t\t";
+  protected final String TEXT_32 = NL;
+
+  public String generate(Object argument)
+  {
+    final StringBuffer stringBuffer = new StringBuffer();
+    stringBuffer.append(TEXT_1);
+    
+	CodeGeneratorArgument codeGenArgument = (CodeGeneratorArgument) argument;
+	INode node = (INode)codeGenArgument.getArgument();
+	String cid = node.getUniqueName();
+	
+	String previous_node="";
+	String start_node="";
+	
+	boolean inMain = true;
+
+	String previousOutputConnectionName = "";
+	
+	if(node.getIncomingConnections()!=null && node.getIncomingConnections().size()>0) {
+		IConnection connection = node.getIncomingConnections().get(0);
+		previous_node = connection.getSource().getUniqueName();
+		INode loadNode = node.getDesignSubjobStartNode();
+		start_node = loadNode.getUniqueName();
+		inMain = loadNode.isSubtreeStart();
+		previousOutputConnectionName = connection.getName();
+	}
+	
+	String outputConnectionName = "";
+	List<IConnection> outputConnections = (List<IConnection>)node.getOutgoingConnections();
+	if(outputConnections!=null && outputConnections.size()>0) {
+		outputConnectionName = outputConnections.get(0).getName();
+	}
+	
+	List<Map<String, String>> criterias = (List<Map<String,String>>)ElementParameterParser.getObjectValue(node, "__SORT_KEY__");
+	
+	boolean useParallel = "true".equals(ElementParameterParser.getValue(node, "__INCREASE_PARALLELISM__"));
+	String reduce_number = ElementParameterParser.getValue(node, "__REDUCE_NUMBER__");
+
+    stringBuffer.append(TEXT_2);
+    stringBuffer.append(cid);
+    stringBuffer.append(TEXT_3);
+    
+	if(criterias != null && criterias.size()>0) {
+
+    stringBuffer.append(TEXT_4);
+    stringBuffer.append(cid);
+    stringBuffer.append(TEXT_5);
+    stringBuffer.append(cid);
+    stringBuffer.append(TEXT_6);
+    stringBuffer.append(outputConnectionName);
+    stringBuffer.append(TEXT_7);
+    stringBuffer.append(previous_node);
+    stringBuffer.append(TEXT_8);
+    stringBuffer.append(previousOutputConnectionName);
+    stringBuffer.append(TEXT_9);
+    
+		boolean isFirst = true;
+		for(Map<String, String> criteria : criterias) {
+			if(!isFirst) {
+
+    stringBuffer.append(TEXT_10);
+    stringBuffer.append(cid);
+    stringBuffer.append(TEXT_11);
+    
+			}
+			isFirst=false;
+
+    stringBuffer.append(TEXT_12);
+    stringBuffer.append(cid);
+    stringBuffer.append(TEXT_13);
+    stringBuffer.append(criteria.get("INPUT_COLUMN"));
+    stringBuffer.append(TEXT_14);
+    stringBuffer.append(criteria.get("ORDER"));
+    stringBuffer.append(TEXT_15);
+    
+		}
+
+		if(useParallel) {
+
+    stringBuffer.append(TEXT_16);
+    stringBuffer.append(cid);
+    stringBuffer.append(TEXT_17);
+    stringBuffer.append(reduce_number);
+    stringBuffer.append(TEXT_18);
+    
+		}
+		
+
+    stringBuffer.append(TEXT_19);
+    stringBuffer.append(cid);
+    stringBuffer.append(TEXT_20);
+    
+		if(inMain) {//all output process and main input process 
+
+    stringBuffer.append(TEXT_21);
+    stringBuffer.append(start_node);
+    stringBuffer.append(TEXT_22);
+    stringBuffer.append(cid);
+    stringBuffer.append(TEXT_23);
+    
+		} else {//lookup process
+
+    stringBuffer.append(TEXT_24);
+    stringBuffer.append(start_node);
+    stringBuffer.append(TEXT_25);
+    stringBuffer.append(start_node);
+    stringBuffer.append(TEXT_26);
+    stringBuffer.append(start_node);
+    stringBuffer.append(TEXT_27);
+    stringBuffer.append(cid);
+    stringBuffer.append(TEXT_28);
+    stringBuffer.append(start_node);
+    stringBuffer.append(TEXT_29);
+    stringBuffer.append(start_node);
+    stringBuffer.append(TEXT_30);
+    
+		}
+	}
+
+    stringBuffer.append(TEXT_31);
+    stringBuffer.append(TEXT_32);
+    return stringBuffer.toString();
+  }
+}

@@ -2,9 +2,18 @@
 <classpath>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry kind="src" path="src"/>
-	<classpathentry kind="lib" path="/Users/arranhartgroves/Dropbox/thinkBA_employees/arran_hartgroves/deliverables/code/github/stockmine/source/.Java/lib/log4j-1.2.15.jar"/>
+	<classpathentry kind="lib" path="/Users/arranhartgroves/Dropbox/thinkBA_employees/arran_hartgroves/deliverables/code/github/stockmine/source/.Java/lib/commons-lang-2.6.jar"/>
 	<classpathentry kind="lib" path="/Users/arranhartgroves/Dropbox/thinkBA_employees/arran_hartgroves/deliverables/code/github/stockmine/source/.Java/lib/talend_file_enhanced_20070724.jar"/>
+	<classpathentry kind="lib" path="/Users/arranhartgroves/Dropbox/thinkBA_employees/arran_hartgroves/deliverables/code/github/stockmine/source/.Java/lib/commons-beanutils-1.8.3.jar"/>
+	<classpathentry kind="lib" path="/Users/arranhartgroves/Dropbox/thinkBA_employees/arran_hartgroves/deliverables/code/github/stockmine/source/.Java/lib/xom-1.2.7.jar"/>
+	<classpathentry kind="lib" path="/Users/arranhartgroves/Dropbox/thinkBA_employees/arran_hartgroves/deliverables/code/github/stockmine/source/.Java/lib/commons-collections-3.2.1.jar"/>
+	<classpathentry kind="lib" path="/Users/arranhartgroves/Dropbox/thinkBA_employees/arran_hartgroves/deliverables/code/github/stockmine/source/.Java/lib/ezmorph-1.0.6.jar"/>
+	<classpathentry kind="lib" path="/Users/arranhartgroves/Dropbox/thinkBA_employees/arran_hartgroves/deliverables/code/github/stockmine/source/.Java/lib/json-lib-2.4-jdk15.jar"/>
+	<classpathentry kind="lib" path="/Users/arranhartgroves/Dropbox/thinkBA_employees/arran_hartgroves/deliverables/code/github/stockmine/source/.Java/lib/mongo-java-driver-2.11.2.jar"/>
+	<classpathentry kind="lib" path="/Users/arranhartgroves/Dropbox/thinkBA_employees/arran_hartgroves/deliverables/code/github/stockmine/source/.Java/lib/log4j-1.2.15.jar"/>
+	<classpathentry kind="lib" path="/Users/arranhartgroves/Dropbox/thinkBA_employees/arran_hartgroves/deliverables/code/github/stockmine/source/.Java/lib/jaxen-1.1.1.jar"/>
 	<classpathentry kind="lib" path="/Users/arranhartgroves/Dropbox/thinkBA_employees/arran_hartgroves/deliverables/code/github/stockmine/source/.Java/lib/talendcsv.jar"/>
+	<classpathentry kind="lib" path="/Users/arranhartgroves/Dropbox/thinkBA_employees/arran_hartgroves/deliverables/code/github/stockmine/source/.Java/lib/commons-logging-1.1.1.jar"/>
 	<classpathentry kind="lib" path="/Users/arranhartgroves/Dropbox/thinkBA_employees/arran_hartgroves/deliverables/code/github/stockmine/source/.Java/lib/dom4j-1.6.1.jar"/>
 	<classpathentry kind="output" path="classes"/>
 </classpath>
