@@ -746,766 +746,670 @@ public class yahoo_finance_http_request implements TalendJob {
 
 	}
 
-	public void tFileInputDelimited_1Process(final java.util.Map<String, Object> globalMap) throws TalendException {
-	globalMap.put("tFileInputDelimited_1_SUBPROCESS_STATE", 0);
+	public void tFileInputDelimited_1Process(
+			final java.util.Map<String, Object> globalMap)
+			throws TalendException {
+		globalMap.put("tFileInputDelimited_1_SUBPROCESS_STATE", 0);
 
- final boolean execStat = this.execStat;
+		final boolean execStat = this.execStat;
 
-	String iterateId = "";
-	int iterateLoop = 0;
-	String currentComponent = "";
-				
-	try {
-	
-			String currentMethodName = new java.lang.Exception().getStackTrace()[0].getMethodName();
+		String iterateId = "";
+		int iterateLoop = 0;
+		String currentComponent = "";
+
+		try {
+
+			String currentMethodName = new java.lang.Exception()
+					.getStackTrace()[0].getMethodName();
 			boolean resumeIt = currentMethodName.equals(resumeEntryMethodName);
-			if( resumeEntryMethodName == null || resumeIt || globalResumeTicket){//start the resume
+			if (resumeEntryMethodName == null || resumeIt || globalResumeTicket) {// start
+																					// the
+																					// resume
 				globalResumeTicket = true;
 
-					
+				row2Struct row2 = new row2Struct();
+				mappingStruct mapping = new mappingStruct();
+				row1Struct row1 = new row1Struct();
 
-		row2Struct row2 = new row2Struct();
-mappingStruct mapping = new mappingStruct();
-row1Struct row1 = new row1Struct();
+				/**
+				 * [tFlowToIterate_5 begin ] start
+				 */
 
+				int NB_ITERATE_tHttpRequest_1 = 0; // for statistics
 
+				ok_Hash.put("tFlowToIterate_5", false);
+				start_Hash.put("tFlowToIterate_5", System.currentTimeMillis());
+				currentComponent = "tFlowToIterate_5";
 
+				if (execStat) {
+					java.util.concurrent.ConcurrentHashMap<Object, Object> concurrentHashMap_mapping = (java.util.concurrent.ConcurrentHashMap) globalMap
+							.get("concurrentHashMap");
+					concurrentHashMap_mapping.putIfAbsent("mapping"
+							+ iterateLoop,
+							new java.util.concurrent.atomic.AtomicInteger(0));
+					java.util.concurrent.atomic.AtomicInteger stats_mapping = (java.util.concurrent.atomic.AtomicInteger) concurrentHashMap_mapping
+							.get("mapping" + iterateLoop);
+					runStat.updateStatOnConnection("mapping" + iterateId,
+							stats_mapping.incrementAndGet() <= 1 ? 0 : 1, 0);
+				}
 
+				int tos_count_tFlowToIterate_5 = 0;
 
-/**
- * [tFlowToIterate_5 begin ] start
- */
-			
-			int NB_ITERATE_tHttpRequest_1 = 0; //for statistics
+				int nb_line_tFlowToIterate_5 = 0;
+				int counter_tFlowToIterate_5 = 0;
 
-ok_Hash.put("tFlowToIterate_5", false);
-start_Hash.put("tFlowToIterate_5", System.currentTimeMillis());
-currentComponent="tFlowToIterate_5";
+				/**
+				 * [tFlowToIterate_5 begin ] stop
+				 */
 
+				/**
+				 * [tMap_1 begin ] start
+				 */
 
-if (execStat) {
-    java.util.concurrent.ConcurrentHashMap<Object, Object> concurrentHashMap_mapping = (java.util.concurrent.ConcurrentHashMap) globalMap.get("concurrentHashMap");
-	concurrentHashMap_mapping.putIfAbsent("mapping" + iterateLoop,new java.util.concurrent.atomic.AtomicInteger(0));
-	java.util.concurrent.atomic.AtomicInteger stats_mapping = (java.util.concurrent.atomic.AtomicInteger) concurrentHashMap_mapping.get("mapping" + iterateLoop);
-	runStat.updateStatOnConnection("mapping" + iterateId, stats_mapping.incrementAndGet()<=1?0:1, 0);
-} 
+				ok_Hash.put("tMap_1", false);
+				start_Hash.put("tMap_1", System.currentTimeMillis());
+				currentComponent = "tMap_1";
 
+				if (execStat) {
+					java.util.concurrent.ConcurrentHashMap<Object, Object> concurrentHashMap_row2 = (java.util.concurrent.ConcurrentHashMap) globalMap
+							.get("concurrentHashMap");
+					concurrentHashMap_row2.putIfAbsent("row2" + iterateLoop,
+							new java.util.concurrent.atomic.AtomicInteger(0));
+					java.util.concurrent.atomic.AtomicInteger stats_row2 = (java.util.concurrent.atomic.AtomicInteger) concurrentHashMap_row2
+							.get("row2" + iterateLoop);
+					runStat.updateStatOnConnection("row2" + iterateId,
+							stats_row2.incrementAndGet() <= 1 ? 0 : 1, 0);
+				}
 
-	int tos_count_tFlowToIterate_5 = 0;
+				int tos_count_tMap_1 = 0;
 
-int nb_line_tFlowToIterate_5 = 0;
-int counter_tFlowToIterate_5 = 0;
+				// ###############################
+				// # Lookup's keys initialization
+				// ###############################
 
- 
+				// ###############################
+				// # Vars initialization
+				class Var__tMap_1__Struct {
+				}
+				Var__tMap_1__Struct Var__tMap_1 = new Var__tMap_1__Struct();
+				// ###############################
 
+				// ###############################
+				// # Outputs initialization
+				mappingStruct mapping_tmp = new mappingStruct();
+				// ###############################
 
+				/**
+				 * [tMap_1 begin ] stop
+				 */
 
-/**
- * [tFlowToIterate_5 begin ] stop
- */
+				/**
+				 * [tFileInputDelimited_1 begin ] start
+				 */
 
+				ok_Hash.put("tFileInputDelimited_1", false);
+				start_Hash.put("tFileInputDelimited_1",
+						System.currentTimeMillis());
+				currentComponent = "tFileInputDelimited_1";
 
+				int tos_count_tFileInputDelimited_1 = 0;
 
-/**
- * [tMap_1 begin ] start
- */
-
-
-ok_Hash.put("tMap_1", false);
-start_Hash.put("tMap_1", System.currentTimeMillis());
-currentComponent="tMap_1";
-
-
-if (execStat) {
-    java.util.concurrent.ConcurrentHashMap<Object, Object> concurrentHashMap_row2 = (java.util.concurrent.ConcurrentHashMap) globalMap.get("concurrentHashMap");
-	concurrentHashMap_row2.putIfAbsent("row2" + iterateLoop,new java.util.concurrent.atomic.AtomicInteger(0));
-	java.util.concurrent.atomic.AtomicInteger stats_row2 = (java.util.concurrent.atomic.AtomicInteger) concurrentHashMap_row2.get("row2" + iterateLoop);
-	runStat.updateStatOnConnection("row2" + iterateId, stats_row2.incrementAndGet()<=1?0:1, 0);
-} 
-
-
-	int tos_count_tMap_1 = 0;
-
-
-
-
-
-
-// ###############################
-// # Lookup's keys initialization
-// ###############################        
-
-// ###############################
-// # Vars initialization
-class  Var__tMap_1__Struct  {
-}
-Var__tMap_1__Struct Var__tMap_1 = new Var__tMap_1__Struct();
-// ###############################
-
-// ###############################
-// # Outputs initialization
-mappingStruct mapping_tmp = new mappingStruct();
-// ###############################
-
-        
-        
-
-
-
-        
-
-
-
-
-
-
-
-
-
- 
-
-
-
-/**
- * [tMap_1 begin ] stop
- */
-
-
-
-/**
- * [tFileInputDelimited_1 begin ] start
- */
-
-
-ok_Hash.put("tFileInputDelimited_1", false);
-start_Hash.put("tFileInputDelimited_1", System.currentTimeMillis());
-currentComponent="tFileInputDelimited_1";
-
-
-	int tos_count_tFileInputDelimited_1 = 0;
-	
-	
-	
-	
-	
 				int nb_line_tFileInputDelimited_1 = 0;
 				org.talend.fileprocess.FileInputDelimited fid_tFileInputDelimited_1 = null;
-				try{
-					
-						Object filename_tFileInputDelimited_1 = "/Users/arranhartgroves/Dropbox/thinkBA_employees/arran_hartgroves/deliverables/code/github/stockmine/data/stocks.csv";
-						if(filename_tFileInputDelimited_1 instanceof java.io.InputStream){
-							
-			int footer_value_tFileInputDelimited_1 = 0, random_value_tFileInputDelimited_1 = -1;
-			if(footer_value_tFileInputDelimited_1 >0 || random_value_tFileInputDelimited_1 > 0){
-				
-				throw new java.lang.Exception("When the input source is a stream,footer and random shouldn't be bigger than 0.");				
-			}
-		
+				try {
+
+					Object filename_tFileInputDelimited_1 = "/Users/arranhartgroves/Dropbox/thinkBA_employees/arran_hartgroves/deliverables/code/github/stockmine/data/stocks.csv";
+					if (filename_tFileInputDelimited_1 instanceof java.io.InputStream) {
+
+						int footer_value_tFileInputDelimited_1 = 0, random_value_tFileInputDelimited_1 = -1;
+						if (footer_value_tFileInputDelimited_1 > 0
+								|| random_value_tFileInputDelimited_1 > 0) {
+
+							throw new java.lang.Exception(
+									"When the input source is a stream,footer and random shouldn't be bigger than 0.");
 						}
+
+					}
+					try {
+						fid_tFileInputDelimited_1 = new org.talend.fileprocess.FileInputDelimited(
+								"/Users/arranhartgroves/Dropbox/thinkBA_employees/arran_hartgroves/deliverables/code/github/stockmine/data/stocks.csv",
+								"ISO-8859-15", ",", "\n", true, 0, 0, -1, -1,
+								false);
+					} catch (java.lang.Exception e) {
+
+						System.err.println(e.getMessage());
+
+					}
+
+					while (fid_tFileInputDelimited_1 != null
+							&& fid_tFileInputDelimited_1.nextRecord()) {
+
+						row2 = null;
+
+						boolean whetherReject_tFileInputDelimited_1 = false;
+						row2 = new row2Struct();
 						try {
-							fid_tFileInputDelimited_1 = new org.talend.fileprocess.FileInputDelimited("/Users/arranhartgroves/Dropbox/thinkBA_employees/arran_hartgroves/deliverables/code/github/stockmine/data/stocks.csv", "ISO-8859-15",",","\n",true,0,0,-1,-1, false);
-						} catch(java.lang.Exception e) {
-							
-								
-								System.err.println(e.getMessage());
-							
-						}
-					
-				    
-					while (fid_tFileInputDelimited_1!=null && fid_tFileInputDelimited_1.nextRecord()) {
-						
-			    						row2 = null;			
-												
-									boolean whetherReject_tFileInputDelimited_1 = false;
-									row2 = new row2Struct();
-									try {
-										
-				int columnIndexWithD_tFileInputDelimited_1 = 0;
-				
-					String temp = ""; 
-				
-					columnIndexWithD_tFileInputDelimited_1 = 0;
-					
-						temp = fid_tFileInputDelimited_1.get(columnIndexWithD_tFileInputDelimited_1);
-						if(temp.length() > 0) {
-							
+
+							int columnIndexWithD_tFileInputDelimited_1 = 0;
+
+							String temp = "";
+
+							columnIndexWithD_tFileInputDelimited_1 = 0;
+
+							temp = fid_tFileInputDelimited_1
+									.get(columnIndexWithD_tFileInputDelimited_1);
+							if (temp.length() > 0) {
+
 								row2.key = ParserUtils.parseTo_int(temp);
-							
-						} else {						
-							
+
+							} else {
+
 								row2.key = 0;
-							
-						}
-					
-					
-				
-					columnIndexWithD_tFileInputDelimited_1 = 1;
-					
-							row2.stock_code = fid_tFileInputDelimited_1.get(columnIndexWithD_tFileInputDelimited_1);
-						
-					
-				
-				
-							
-			    					} catch (java.lang.Exception e) {
-			        					whetherReject_tFileInputDelimited_1 = true;
-			        					
-			                					System.err.println(e.getMessage());
-			                					row2 = null;
-			                				
-			    					}
-								
 
- 
-
-
-
-/**
- * [tFileInputDelimited_1 begin ] stop
- */
-/**
- * [tFileInputDelimited_1 main ] start
- */
-
-
-currentComponent="tFileInputDelimited_1";
-
-
-
- 
-
-
-	tos_count_tFileInputDelimited_1++;
-
-/**
- * [tFileInputDelimited_1 main ] stop
- */
-// Start of branch "row2"
-if(row2 != null) { 
-
-
-
-/**
- * [tMap_1 main ] start
- */
-
-
-currentComponent="tMap_1";
-
-
-//row2
-//row2
-
-
-if(execStat){
-  runStat.updateStatOnConnection("row2"+iterateId,1, 1);
- } 
-
-
-
-		
-		
-		boolean hasCasePrimitiveKeyWithNull_tMap_1 = false;
-		
-        // ###############################
-        // # Input tables (lookups)
-		  boolean rejectedInnerJoin_tMap_1 = false;
-		  boolean mainRowRejected_tMap_1 = false;
-            				    								  
-		// ###############################
-        { // start of Var scope
-        
-	        // ###############################
-        	// # Vars tables
-        
-Var__tMap_1__Struct Var = Var__tMap_1;// ###############################
-        // ###############################
-        // # Output tables
-
-mapping = null;
-
-
-// # Output table : 'mapping'
-mapping_tmp.key = row2.key ;
-mapping_tmp.stock_code = row2.stock_code ;
-mapping = mapping_tmp;
-// ###############################
-
-} // end of Var scope
-
-rejectedInnerJoin_tMap_1 = false;
-
-
-
-
-
-
-
-
-
-
-
- 
-
-
-	tos_count_tMap_1++;
-
-/**
- * [tMap_1 main ] stop
- */
-// Start of branch "mapping"
-if(mapping != null) { 
-
-
-
-/**
- * [tFlowToIterate_5 main ] start
- */
-
-
-currentComponent="tFlowToIterate_5";
-
-
-//mapping
-//mapping
-
-
-if(execStat){
-  runStat.updateStatOnConnection("mapping"+iterateId,1, 1);
- } 
-
-
-
-
-    	            
-            globalMap.put("mapping.key", mapping.key);
-            nb_line_tFlowToIterate_5++;              
-            globalMap.put("mapping.stock_code", mapping.stock_code);
-            nb_line_tFlowToIterate_5++;  
- 
-       counter_tFlowToIterate_5++;
-       globalMap.put("tFlowToIterate_5_CURRENT_ITERATION", counter_tFlowToIterate_5);
- 
-
-
-	tos_count_tFlowToIterate_5++;
-
-/**
- * [tFlowToIterate_5 main ] stop
- */
-	NB_ITERATE_tHttpRequest_1++;
-	iterateLoop++;
-
-if(execStat){				
-           			runStat.updateStatOnConnection("row1", 3, 0);
-}           			        		
-if(execStat){
-				runStat.updateStatOnConnection("iterate1", 1, "exec" + NB_ITERATE_tHttpRequest_1);
-				//Thread.sleep(1000);
-}				
-
-
-/**
- * [tMongoDBOutput_2 begin ] start
- */
-
-
-ok_Hash.put("tMongoDBOutput_2", false);
-start_Hash.put("tMongoDBOutput_2", System.currentTimeMillis());
-currentComponent="tMongoDBOutput_2";
-
-
-if (execStat) {
-    java.util.concurrent.ConcurrentHashMap<Object, Object> concurrentHashMap_row1 = (java.util.concurrent.ConcurrentHashMap) globalMap.get("concurrentHashMap");
-	concurrentHashMap_row1.putIfAbsent("row1" + iterateLoop,new java.util.concurrent.atomic.AtomicInteger(0));
-	java.util.concurrent.atomic.AtomicInteger stats_row1 = (java.util.concurrent.atomic.AtomicInteger) concurrentHashMap_row1.get("row1" + iterateLoop);
-	runStat.updateStatOnConnection("row1" + iterateId, stats_row1.incrementAndGet()<=1?0:1, 0);
-} 
-
-
-	int tos_count_tMongoDBOutput_2 = 0;
-
-			int nb_line_tMongoDBOutput_2 = 0;
-			class DBObjectUtil_tMongoDBOutput_2 {
-			
-				private com.mongodb.BasicDBObject object = null;
-				//Put value to embedded document
-				//If have no embedded document, put the value to root document
-				public void put(String parentNode, String curentName, Object value) {
-					if (parentNode == null || "".equals(parentNode)) {
-						object.put(curentName, value);
-					} else {
-						String objNames[]= parentNode.split("\\.");
-						com.mongodb.BasicDBObject lastNode = getParentNode(parentNode, objNames.length-1);
-						lastNode.put(curentName, value);
-						com.mongodb.BasicDBObject parenttNode = null;
-						for (int i = objNames.length - 1; i >=0; i--) {
-							parenttNode=getParentNode(parentNode, i-1);
-							parenttNode.put(objNames[i], lastNode);
-							lastNode=(com.mongodb.BasicDBObject)parenttNode.clone();
-						}
-						object=lastNode;
-					}
-				}
-				//Get node(embedded document) by path configuration
-				public com.mongodb.BasicDBObject getParentNode(String parentNode, int index) {
-					com.mongodb.BasicDBObject basicDBObject = object;
-					if (parentNode == null || "".equals(parentNode)) {
-						return object;
-					} else {
-						String objNames[] = parentNode.split("\\.");
-						for (int i = 0; i <= index; i++) {
-							basicDBObject = (com.mongodb.BasicDBObject) basicDBObject
-									.get(objNames[i]);
-							if (basicDBObject == null) {
-								basicDBObject = new com.mongodb.BasicDBObject();
-								return basicDBObject;
 							}
-							if (i == index) {
-								break;
-							}
+
+							columnIndexWithD_tFileInputDelimited_1 = 1;
+
+							row2.stock_code = fid_tFileInputDelimited_1
+									.get(columnIndexWithD_tFileInputDelimited_1);
+
+						} catch (java.lang.Exception e) {
+							whetherReject_tFileInputDelimited_1 = true;
+
+							System.err.println(e.getMessage());
+							row2 = null;
+
 						}
-						return basicDBObject;
+
+						/**
+						 * [tFileInputDelimited_1 begin ] stop
+						 */
+						/**
+						 * [tFileInputDelimited_1 main ] start
+						 */
+
+						currentComponent = "tFileInputDelimited_1";
+
+						tos_count_tFileInputDelimited_1++;
+
+						/**
+						 * [tFileInputDelimited_1 main ] stop
+						 */
+						// Start of branch "row2"
+						if (row2 != null) {
+
+							/**
+							 * [tMap_1 main ] start
+							 */
+
+							currentComponent = "tMap_1";
+
+							// row2
+							// row2
+
+							if (execStat) {
+								runStat.updateStatOnConnection("row2"
+										+ iterateId, 1, 1);
+							}
+
+							boolean hasCasePrimitiveKeyWithNull_tMap_1 = false;
+
+							// ###############################
+							// # Input tables (lookups)
+							boolean rejectedInnerJoin_tMap_1 = false;
+							boolean mainRowRejected_tMap_1 = false;
+
+							// ###############################
+							{ // start of Var scope
+
+								// ###############################
+								// # Vars tables
+
+								Var__tMap_1__Struct Var = Var__tMap_1;// ###############################
+								// ###############################
+								// # Output tables
+
+								mapping = null;
+
+								// # Output table : 'mapping'
+								mapping_tmp.key = row2.key;
+								mapping_tmp.stock_code = row2.stock_code;
+								mapping = mapping_tmp;
+								// ###############################
+
+							} // end of Var scope
+
+							rejectedInnerJoin_tMap_1 = false;
+
+							tos_count_tMap_1++;
+
+							/**
+							 * [tMap_1 main ] stop
+							 */
+							// Start of branch "mapping"
+							if (mapping != null) {
+
+								/**
+								 * [tFlowToIterate_5 main ] start
+								 */
+
+								currentComponent = "tFlowToIterate_5";
+
+								// mapping
+								// mapping
+
+								if (execStat) {
+									runStat.updateStatOnConnection("mapping"
+											+ iterateId, 1, 1);
+								}
+
+								globalMap.put("mapping.key", mapping.key);
+								nb_line_tFlowToIterate_5++;
+								globalMap.put("mapping.stock_code",
+										mapping.stock_code);
+								nb_line_tFlowToIterate_5++;
+
+								counter_tFlowToIterate_5++;
+								globalMap.put(
+										"tFlowToIterate_5_CURRENT_ITERATION",
+										counter_tFlowToIterate_5);
+
+								tos_count_tFlowToIterate_5++;
+
+								/**
+								 * [tFlowToIterate_5 main ] stop
+								 */
+								NB_ITERATE_tHttpRequest_1++;
+								iterateLoop++;
+
+								if (execStat) {
+									runStat.updateStatOnConnection("row1", 3, 0);
+								}
+								if (execStat) {
+									runStat.updateStatOnConnection("iterate1",
+											1, "exec"
+													+ NB_ITERATE_tHttpRequest_1);
+									// Thread.sleep(1000);
+								}
+
+								/**
+								 * [tMongoDBOutput_2 begin ] start
+								 */
+
+								ok_Hash.put("tMongoDBOutput_2", false);
+								start_Hash.put("tMongoDBOutput_2",
+										System.currentTimeMillis());
+								currentComponent = "tMongoDBOutput_2";
+
+								if (execStat) {
+									java.util.concurrent.ConcurrentHashMap<Object, Object> concurrentHashMap_row1 = (java.util.concurrent.ConcurrentHashMap) globalMap
+											.get("concurrentHashMap");
+									concurrentHashMap_row1
+											.putIfAbsent(
+													"row1" + iterateLoop,
+													new java.util.concurrent.atomic.AtomicInteger(
+															0));
+									java.util.concurrent.atomic.AtomicInteger stats_row1 = (java.util.concurrent.atomic.AtomicInteger) concurrentHashMap_row1
+											.get("row1" + iterateLoop);
+									runStat.updateStatOnConnection("row1"
+											+ iterateId, stats_row1
+											.incrementAndGet() <= 1 ? 0 : 1, 0);
+								}
+
+								int tos_count_tMongoDBOutput_2 = 0;
+
+								int nb_line_tMongoDBOutput_2 = 0;
+								class DBObjectUtil_tMongoDBOutput_2 {
+
+									private com.mongodb.BasicDBObject object = null;
+
+									// Put value to embedded document
+									// If have no embedded document, put the
+									// value to root document
+									public void put(String parentNode,
+											String curentName, Object value) {
+										if (parentNode == null
+												|| "".equals(parentNode)) {
+											object.put(curentName, value);
+										} else {
+											String objNames[] = parentNode
+													.split("\\.");
+											com.mongodb.BasicDBObject lastNode = getParentNode(
+													parentNode,
+													objNames.length - 1);
+											lastNode.put(curentName, value);
+											com.mongodb.BasicDBObject parenttNode = null;
+											for (int i = objNames.length - 1; i >= 0; i--) {
+												parenttNode = getParentNode(
+														parentNode, i - 1);
+												parenttNode.put(objNames[i],
+														lastNode);
+												lastNode = (com.mongodb.BasicDBObject) parenttNode
+														.clone();
+											}
+											object = lastNode;
+										}
+									}
+
+									// Get node(embedded document) by path
+									// configuration
+									public com.mongodb.BasicDBObject getParentNode(
+											String parentNode, int index) {
+										com.mongodb.BasicDBObject basicDBObject = object;
+										if (parentNode == null
+												|| "".equals(parentNode)) {
+											return object;
+										} else {
+											String objNames[] = parentNode
+													.split("\\.");
+											for (int i = 0; i <= index; i++) {
+												basicDBObject = (com.mongodb.BasicDBObject) basicDBObject
+														.get(objNames[i]);
+												if (basicDBObject == null) {
+													basicDBObject = new com.mongodb.BasicDBObject();
+													return basicDBObject;
+												}
+												if (i == index) {
+													break;
+												}
+											}
+											return basicDBObject;
+										}
+									}
+
+									public void putkeyNode(String parentNode,
+											String curentName, Object value) {
+										if (parentNode == null
+												|| "".equals(parentNode)
+												|| ".".equals(parentNode)) {
+											put(parentNode, curentName, value);
+										} else {
+											put("", parentNode + "."
+													+ curentName, value);
+										}
+									}
+
+									public com.mongodb.BasicDBObject getObject() {
+										return this.object;
+									}
+
+									public void setObject(
+											com.mongodb.BasicDBObject object) {
+										this.object = object;
+									}
+
+								}
+								DBObjectUtil_tMongoDBOutput_2 updateObjectUtil_tMongoDBOutput_2 = new DBObjectUtil_tMongoDBOutput_2();
+								DBObjectUtil_tMongoDBOutput_2 queryObjectUtil_tMongoDBOutput_2 = new DBObjectUtil_tMongoDBOutput_2();
+								java.util.Map<String, String> pathMap_tMongoDBOutput_2 = new java.util.HashMap<String, String>();
+								com.mongodb.Mongo mongo_tMongoDBOutput_2 = null;
+								com.mongodb.DB db_tMongoDBOutput_2 = null;
+								pathMap_tMongoDBOutput_2.put("ResponseContent",
+										"");
+								try {
+									mongo_tMongoDBOutput_2 = new com.mongodb.Mongo(
+											"", 27017);
+									db_tMongoDBOutput_2 = mongo_tMongoDBOutput_2
+											.getDB("");
+									com.mongodb.DBCollection coll_tMongoDBOutput_2 = db_tMongoDBOutput_2
+											.getCollection("");
+
+									/**
+									 * [tMongoDBOutput_2 begin ] stop
+									 */
+
+									/**
+									 * [tHttpRequest_1 begin ] start
+									 */
+
+									ok_Hash.put("tHttpRequest_1", false);
+									start_Hash.put("tHttpRequest_1",
+											System.currentTimeMillis());
+									currentComponent = "tHttpRequest_1";
+
+									int tos_count_tHttpRequest_1 = 0;
+
+									/**
+									 * [tHttpRequest_1 begin ] stop
+									 */
+									/**
+									 * [tHttpRequest_1 main ] start
+									 */
+
+									currentComponent = "tHttpRequest_1";
+
+									java.net.URL url_tHttpRequest_1 = new java.net.URL(
+											"http://download.finance.yahoo.com/d/quotes.csv?s="
+													+ row2.stock_code
+													+ "&f=c8g3a0b2a5a2b0b3b6b4c1c0m7m5k4j5p2k2c6c3c4h0g0m0m2w1w4r1d0y0e0j4e7e9e8q0m3f6l2g4g1g5g6v1v7d1l1k1k3t1l0l3j1j3i0n0n4t8o0i5r5r0r2m8m6k5j6p0p6r6r7p1p5s6s1j2s7x0s0t7d2t6f0m4v0k0j0w0&e=.csv");
+
+									java.net.HttpURLConnection urlConn_tHttpRequest_1 = (java.net.HttpURLConnection) url_tHttpRequest_1
+											.openConnection();
+									urlConn_tHttpRequest_1
+											.setRequestMethod("GET");
+									urlConn_tHttpRequest_1.setDoOutput(true);
+									urlConn_tHttpRequest_1.setDoInput(true);
+									urlConn_tHttpRequest_1.setUseCaches(false);
+
+									urlConn_tHttpRequest_1.connect();
+
+									byte[] buffer_tHttpRequest_1 = new byte[1024];
+									int bos_buffer_tHttpRequest_1 = 0;
+									StringBuilder sb_tHttpRequest_1 = new StringBuilder();
+
+									if (java.net.HttpURLConnection.HTTP_OK == (urlConn_tHttpRequest_1
+											.getResponseCode())) {
+										java.io.InputStream bis_tHttpRequest_1 = new java.io.BufferedInputStream(
+												urlConn_tHttpRequest_1
+														.getInputStream());
+										while ((bos_buffer_tHttpRequest_1 = bis_tHttpRequest_1
+												.read(buffer_tHttpRequest_1)) != -1) {
+											sb_tHttpRequest_1
+													.append(new String(
+															buffer_tHttpRequest_1,
+															0,
+															bos_buffer_tHttpRequest_1));
+										}
+										bis_tHttpRequest_1.close();
+									} else {
+										System.err
+												.println(urlConn_tHttpRequest_1
+														.getResponseCode()
+														+ " "
+														+ urlConn_tHttpRequest_1
+																.getResponseMessage());
+									}
+
+									row1.ResponseContent = sb_tHttpRequest_1
+											.toString();
+									urlConn_tHttpRequest_1.disconnect();
+
+									tos_count_tHttpRequest_1++;
+
+									/**
+									 * [tHttpRequest_1 main ] stop
+									 */
+
+									/**
+									 * [tMongoDBOutput_2 main ] start
+									 */
+
+									currentComponent = "tMongoDBOutput_2";
+
+									// row1
+									// row1
+
+									if (execStat) {
+										runStat.updateStatOnConnection("row1"
+												+ iterateId, 1, 1);
+									}
+
+									com.mongodb.WriteResult resultMessage_tMongoDBOutput_2 = null;
+									updateObjectUtil_tMongoDBOutput_2
+											.setObject(new com.mongodb.BasicDBObject());
+
+									updateObjectUtil_tMongoDBOutput_2.put(
+											pathMap_tMongoDBOutput_2
+													.get("ResponseContent"),
+											"ResponseContent",
+											row1.ResponseContent);
+									com.mongodb.BasicDBObject updateObj_tMongoDBOutput_2 = updateObjectUtil_tMongoDBOutput_2
+											.getObject();
+									resultMessage_tMongoDBOutput_2 = coll_tMongoDBOutput_2
+											.insert(updateObj_tMongoDBOutput_2);
+									if (resultMessage_tMongoDBOutput_2 != null
+											&& resultMessage_tMongoDBOutput_2
+													.getError() != null) {
+										System.err
+												.println(resultMessage_tMongoDBOutput_2
+														.getError());
+									}
+									nb_line_tMongoDBOutput_2++;
+
+									tos_count_tMongoDBOutput_2++;
+
+									/**
+									 * [tMongoDBOutput_2 main ] stop
+									 */
+
+									/**
+									 * [tHttpRequest_1 end ] start
+									 */
+
+									currentComponent = "tHttpRequest_1";
+
+									ok_Hash.put("tHttpRequest_1", true);
+									end_Hash.put("tHttpRequest_1",
+											System.currentTimeMillis());
+
+									/**
+									 * [tHttpRequest_1 end ] stop
+									 */
+
+									/**
+									 * [tMongoDBOutput_2 end ] start
+									 */
+
+									currentComponent = "tMongoDBOutput_2";
+
+								} finally {
+									if (mongo_tMongoDBOutput_2 != null) {
+										mongo_tMongoDBOutput_2.close();
+									}
+								}
+								globalMap.put("tMongoDBOutput_2_NB_LINE",
+										nb_line_tMongoDBOutput_2);
+								if (execStat) {
+									runStat.updateStatOnConnection("row1"
+											+ iterateId, 2, 0);
+								}
+
+								ok_Hash.put("tMongoDBOutput_2", true);
+								end_Hash.put("tMongoDBOutput_2",
+										System.currentTimeMillis());
+
+								/**
+								 * [tMongoDBOutput_2 end ] stop
+								 */
+
+								if (execStat) {
+									runStat.updateStatOnConnection("iterate1",
+											2, "exec"
+													+ NB_ITERATE_tHttpRequest_1);
+								}
+
+							} // End of branch "mapping"
+
+						} // End of branch "row2"
+
+						/**
+						 * [tFileInputDelimited_1 end ] start
+						 */
+
+						currentComponent = "tFileInputDelimited_1";
+
+					}
+				} finally {
+					if (!((Object) ("/Users/arranhartgroves/Dropbox/thinkBA_employees/arran_hartgroves/deliverables/code/github/stockmine/data/stocks.csv") instanceof java.io.InputStream)) {
+						if (fid_tFileInputDelimited_1 != null) {
+							fid_tFileInputDelimited_1.close();
+						}
+					}
+					if (fid_tFileInputDelimited_1 != null) {
+						globalMap.put("tFileInputDelimited_1_NB_LINE",
+								fid_tFileInputDelimited_1.getRowNumber());
+
 					}
 				}
-				
-				public void putkeyNode(String parentNode, String curentName, Object value){
-					if (parentNode == null || "".equals(parentNode) || ".".equals(parentNode)) {
-						put(parentNode, curentName, value);
-					}else{
-						put("", parentNode+"."+curentName, value);
-					}
+
+				ok_Hash.put("tFileInputDelimited_1", true);
+				end_Hash.put("tFileInputDelimited_1",
+						System.currentTimeMillis());
+
+				/**
+				 * [tFileInputDelimited_1 end ] stop
+				 */
+
+				/**
+				 * [tMap_1 end ] start
+				 */
+
+				currentComponent = "tMap_1";
+
+				// ###############################
+				// # Lookup hashes releasing
+				// ###############################
+
+				if (execStat) {
+					runStat.updateStatOnConnection("row2" + iterateId, 2, 0);
 				}
-			
-				public com.mongodb.BasicDBObject getObject() {
-					return this.object;
+
+				ok_Hash.put("tMap_1", true);
+				end_Hash.put("tMap_1", System.currentTimeMillis());
+
+				/**
+				 * [tMap_1 end ] stop
+				 */
+
+				/**
+				 * [tFlowToIterate_5 end ] start
+				 */
+
+				currentComponent = "tFlowToIterate_5";
+
+				globalMap.put("tFlowToIterate_5_NB_LINE",
+						nb_line_tFlowToIterate_5);
+				if (execStat) {
+					runStat.updateStatOnConnection("mapping" + iterateId, 2, 0);
 				}
-				
-				public void setObject(com.mongodb.BasicDBObject object){
-					this.object=object;
-				}
-			
-			}
-			DBObjectUtil_tMongoDBOutput_2 updateObjectUtil_tMongoDBOutput_2=new DBObjectUtil_tMongoDBOutput_2();
-			DBObjectUtil_tMongoDBOutput_2 queryObjectUtil_tMongoDBOutput_2=new DBObjectUtil_tMongoDBOutput_2();
-			java.util.Map<String, String> pathMap_tMongoDBOutput_2=new java.util.HashMap<String, String>();
-			com.mongodb.Mongo mongo_tMongoDBOutput_2=null;
-			com.mongodb.DB db_tMongoDBOutput_2 =null;
-				pathMap_tMongoDBOutput_2.put("ResponseContent","");
-			try{
-				mongo_tMongoDBOutput_2 = new com.mongodb.Mongo(127.0.0.1, 27017);
-				db_tMongoDBOutput_2 = mongo_tMongoDBOutput_2.getDB(stockmine);
-				com.mongodb.DBCollection coll_tMongoDBOutput_2 = db_tMongoDBOutput_2.getCollection(yahoo_finance);
- 
 
+				ok_Hash.put("tFlowToIterate_5", true);
+				end_Hash.put("tFlowToIterate_5", System.currentTimeMillis());
 
+				/**
+				 * [tFlowToIterate_5 end ] stop
+				 */
 
-/**
- * [tMongoDBOutput_2 begin ] stop
- */
+			}// end the resume
 
+		} catch (java.lang.Exception e) {
 
+			TalendException te = new TalendException(e, currentComponent,
+					globalMap);
 
-/**
- * [tHttpRequest_1 begin ] start
- */
+			throw te;
 
+		} catch (java.lang.Error error) {
 
-ok_Hash.put("tHttpRequest_1", false);
-start_Hash.put("tHttpRequest_1", System.currentTimeMillis());
-currentComponent="tHttpRequest_1";
+			runStat.stopThreadStat();
+			throw error;
 
-
-	int tos_count_tHttpRequest_1 = 0;
-
- 
-
-
-
-/**
- * [tHttpRequest_1 begin ] stop
- */
-/**
- * [tHttpRequest_1 main ] start
- */
-
-
-currentComponent="tHttpRequest_1";
-
-
-java.net.URL url_tHttpRequest_1 = new java.net.URL("http://download.finance.yahoo.com/d/quotes.csv?s="+row2.stock_code+"&f=c8g3a0b2a5a2b0b3b6b4c1c0m7m5k4j5p2k2c6c3c4h0g0m0m2w1w4r1d0y0e0j4e7e9e8q0m3f6l2g4g1g5g6v1v7d1l1k1k3t1l0l3j1j3i0n0n4t8o0i5r5r0r2m8m6k5j6p0p6r6r7p1p5s6s1j2s7x0s0t7d2t6f0m4v0k0j0w0&e=.csv");
-
-java.net.HttpURLConnection urlConn_tHttpRequest_1 = (java.net.HttpURLConnection) url_tHttpRequest_1.openConnection();
-urlConn_tHttpRequest_1.setRequestMethod("GET");
-urlConn_tHttpRequest_1.setDoOutput(true);
-urlConn_tHttpRequest_1.setDoInput(true);
-urlConn_tHttpRequest_1.setUseCaches(false);
-
-
-urlConn_tHttpRequest_1.connect();
-
-byte[] buffer_tHttpRequest_1 = new byte[1024];
-int bos_buffer_tHttpRequest_1 = 0;StringBuilder sb_tHttpRequest_1=new StringBuilder(); 
-
-if (java.net.HttpURLConnection.HTTP_OK == (urlConn_tHttpRequest_1.getResponseCode())) {
-	java.io.InputStream bis_tHttpRequest_1 = new java.io.BufferedInputStream(urlConn_tHttpRequest_1.getInputStream());
-		while ((bos_buffer_tHttpRequest_1 = bis_tHttpRequest_1.read(buffer_tHttpRequest_1)) != -1) {sb_tHttpRequest_1.append(new String(buffer_tHttpRequest_1,0,bos_buffer_tHttpRequest_1)); 
 		}
-		bis_tHttpRequest_1.close();
-} else {
-  System.err.println(urlConn_tHttpRequest_1.getResponseCode() + " " + urlConn_tHttpRequest_1.getResponseMessage());
-}
 
-        row1.ResponseContent = sb_tHttpRequest_1.toString();
-urlConn_tHttpRequest_1.disconnect();
-
- 
-
-
-	tos_count_tHttpRequest_1++;
-
-/**
- * [tHttpRequest_1 main ] stop
- */
-
-/**
- * [tMongoDBOutput_2 main ] start
- */
-
-
-currentComponent="tMongoDBOutput_2";
-
-
-//row1
-//row1
-
-
-if(execStat){
-  runStat.updateStatOnConnection("row1"+iterateId,1, 1);
- } 
-
-
-				
-				com.mongodb.WriteResult resultMessage_tMongoDBOutput_2=null;
-				updateObjectUtil_tMongoDBOutput_2.setObject(new com.mongodb.BasicDBObject());
-					
-      				updateObjectUtil_tMongoDBOutput_2.put(pathMap_tMongoDBOutput_2.get("ResponseContent"),"ResponseContent", row1.ResponseContent);
-				com.mongodb.BasicDBObject updateObj_tMongoDBOutput_2 = updateObjectUtil_tMongoDBOutput_2.getObject();
-					resultMessage_tMongoDBOutput_2=coll_tMongoDBOutput_2.insert(updateObj_tMongoDBOutput_2);	
-				if(resultMessage_tMongoDBOutput_2!=null && resultMessage_tMongoDBOutput_2.getError()!=null){
-					System.err.println(resultMessage_tMongoDBOutput_2.getError());
-				}
-				nb_line_tMongoDBOutput_2 ++;
-
- 
-
-
-	tos_count_tMongoDBOutput_2++;
-
-/**
- * [tMongoDBOutput_2 main ] stop
- */
-
-
-
-/**
- * [tHttpRequest_1 end ] start
- */
-
-
-currentComponent="tHttpRequest_1";
-
-
-
- 
-
-ok_Hash.put("tHttpRequest_1", true);
-end_Hash.put("tHttpRequest_1", System.currentTimeMillis());
-
-
-
-
-/**
- * [tHttpRequest_1 end ] stop
- */
-
-/**
- * [tMongoDBOutput_2 end ] start
- */
-
-
-currentComponent="tMongoDBOutput_2";
-
-
-		}finally{
-			if(mongo_tMongoDBOutput_2 != null )
-			{
-				mongo_tMongoDBOutput_2.close();
-			}
-		}
-globalMap.put("tMongoDBOutput_2_NB_LINE", nb_line_tMongoDBOutput_2);if(execStat){
- runStat.updateStatOnConnection("row1"
- 	+iterateId,2, 0); 
-}
- 
-
-ok_Hash.put("tMongoDBOutput_2", true);
-end_Hash.put("tMongoDBOutput_2", System.currentTimeMillis());
-
-
-
-
-/**
- * [tMongoDBOutput_2 end ] stop
- */
-
-
-
-if(execStat){
-				runStat.updateStatOnConnection("iterate1", 2, "exec" + NB_ITERATE_tHttpRequest_1);
-}				
-
-
-
-
-} // End of branch "mapping"
-
-
-
-
-
-} // End of branch "row2"
-
-
-
-
-/**
- * [tFileInputDelimited_1 end ] start
- */
-
-
-currentComponent="tFileInputDelimited_1";
-
-
-
-
-
-            }
-            }finally{
-                if(!((Object)("/Users/arranhartgroves/Dropbox/thinkBA_employees/arran_hartgroves/deliverables/code/github/stockmine/data/stocks.csv") instanceof java.io.InputStream)){
-                	if(fid_tFileInputDelimited_1!=null){
-                		fid_tFileInputDelimited_1.close();
-                	}
-                }
-                if(fid_tFileInputDelimited_1!=null){
-                	globalMap.put("tFileInputDelimited_1_NB_LINE", fid_tFileInputDelimited_1.getRowNumber());
-					
-                }
-			}
-			  
-
- 
-
-ok_Hash.put("tFileInputDelimited_1", true);
-end_Hash.put("tFileInputDelimited_1", System.currentTimeMillis());
-
-
-
-
-/**
- * [tFileInputDelimited_1 end ] stop
- */
-
-/**
- * [tMap_1 end ] start
- */
-
-
-currentComponent="tMap_1";
-
-
-
-
-
-// ###############################
-// # Lookup hashes releasing
-// ###############################         
-
-
-
-
-if(execStat){
- runStat.updateStatOnConnection("row2"
- 	+iterateId,2, 0); 
-}
- 
-
-ok_Hash.put("tMap_1", true);
-end_Hash.put("tMap_1", System.currentTimeMillis());
-
-
-
-
-/**
- * [tMap_1 end ] stop
- */
-
-/**
- * [tFlowToIterate_5 end ] start
- */
-
-
-currentComponent="tFlowToIterate_5";
-
-
-
-globalMap.put("tFlowToIterate_5_NB_LINE",nb_line_tFlowToIterate_5);if(execStat){
- runStat.updateStatOnConnection("mapping"
- 	+iterateId,2, 0); 
-}
- 
-
-ok_Hash.put("tFlowToIterate_5", true);
-end_Hash.put("tFlowToIterate_5", System.currentTimeMillis());
-
-
-
-
-/**
- * [tFlowToIterate_5 end ] stop
- */
-
-
-
-
-
-
-
-
-
-}//end the resume
-
-
-
-
-
-	
-	} catch(java.lang.Exception e) {	
-		
-		TalendException te = new TalendException(e, currentComponent, globalMap);
-		
-		
-		throw te;
-	
-	} catch(java.lang.Error error) {
-	
-		runStat.stopThreadStat();
-		throw error;
-
+		globalMap.put("tFileInputDelimited_1_SUBPROCESS_STATE", 1);
 	}
-	
-	globalMap.put("tFileInputDelimited_1_SUBPROCESS_STATE", 1);
-}	public String resuming_logs_dir_path = null;
+
+	public String resuming_logs_dir_path = null;
 	public String resuming_checkpoint_path = null;
 	public String parent_part_launcher = null;
 	private String resumeEntryMethodName = null;
@@ -1807,6 +1711,6 @@ end_Hash.put("tFlowToIterate_5", System.currentTimeMillis());
 	ResumeUtil resumeUtil = null;
 }
 /************************************************************************************************
- * 47467 characters generated by Talend Open Studio for Big Data on the October
- * 30, 2013 10:36:22 PM GMT
+ * 47442 characters generated by Talend Open Studio for Big Data on the October
+ * 30, 2013 11:41:29 PM GMT
  ************************************************************************************************/
