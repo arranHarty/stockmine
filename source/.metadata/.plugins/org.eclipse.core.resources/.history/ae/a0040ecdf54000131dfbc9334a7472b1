@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.record="http:///orgomg/cwm/resource/record.ecore">
+  <TalendMetadata:DelimitedFileConnection xmi:id="_-iXdcEDpEeOfA_gk2MO8Dw" name="stock_codes_files" dataPackage="_-iXdcUDpEeOfA_gk2MO8Dw" Server="Localhost 127.0.0.1" FilePath="/Users/arranhartgroves/Dropbox/thinkBA_employees/arran_hartgroves/deliverables/code/github/stockmine/data/stocks.csv" Encoding="ISO-8859-15" FieldSeparatorValue="&quot;,&quot;" RowSeparatorValue="&quot;\n&quot;" HeaderValue="0" FooterValue="0" LimitValue="" RemoveEmptyRow="true" EscapeChar="&quot;&quot;&quot;" TextEnclosure="&quot;&quot;&quot;" FieldSeparatorType="Comma"/>
+  <orgomg.cwm.resource.record:RecordFile xmi:id="_-iXdcUDpEeOfA_gk2MO8Dw" name="default" dataManager="_-iXdcEDpEeOfA_gk2MO8Dw">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_-iXdckDpEeOfA_gk2MO8Dw" id="_w68lgEDpEeOfA_gk2MO8Dw" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_-iXdc0DpEeOfA_gk2MO8Dw" label="key" length="1" talendType="id_Integer" key="true" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_-iXddEDpEeOfA_gk2MO8Dw" label="code" length="5" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+    </ownedElement>
+  </orgomg.cwm.resource.record:RecordFile>
+</xmi:XMI>

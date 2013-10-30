@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" defaultContext="Default" screenshot="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">
+  <context confirmationNeeded="false" name="Default"/>
+  <parameters>
+    <elementParameter field="TEXT" name="JOB_RUN_VM_ARGUMENTS" value=" -Xms256M -Xmx1024M"/>
+    <elementParameter field="CHECK" name="JOB_RUN_VM_ARGUMENTS_OPTION" value="false"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="0"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" value="0"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPTIONS" value="none"/>
+    <elementParameter field="TEXT" name="OEM_CUSTOM_ATTRIBUTE" value=""/>
+    <elementParameter field="TEXT" name="HADOOP_APP_PATH" value=""/>
+    <elementParameter field="TEXT" name="JOBID_FOR_OOZIE" value=""/>
+    <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" value=""/>
+    <elementParameter field="TABLE" name="HADOOP_ADVANCED_PROPERTIES"/>
+    <elementParameter field="CHECK" name="IMPLICITCONTEXT_USE_PROJECT_SETTINGS" value="true"/>
+    <elementParameter field="CHECK" name="STATANDLOG_USE_PROJECT_SETTINGS" value="true"/>
+    <elementParameter field="CHECK" name="MULTI_THREAD_EXECATION" value="false"/>
+    <elementParameter field="FILE" name="IMPLICIT_TCONTEXTLOAD_FILE" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY_TYPE_IMPLICIT_CONTEXT:REPOSITORY_PROPERTY_TYPE" value=""/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION_IMPLICIT_CONTEXT" value=""/>
+    <elementParameter field="CHECK" name="DISABLE_WARNINGS" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_INFO" value="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="ORACLE_10"/>
+    <routinesParameter id="_RjOMIEDSEeOGibAg3FzzjQ" name="DataOperation"/>
+    <routinesParameter id="_RjcOkEDSEeOGibAg3FzzjQ" name="Mathematical"/>
+    <routinesParameter id="_RjfR4EDSEeOGibAg3FzzjQ" name="Numeric"/>
+    <routinesParameter id="_RjiVMEDSEeOGibAg3FzzjQ" name="Relational"/>
+    <routinesParameter id="_Rjl_kEDSEeOGibAg3FzzjQ" name="StringHandling"/>
+    <routinesParameter id="_Rjpp8EDSEeOGibAg3FzzjQ" name="TalendDataGenerator"/>
+    <routinesParameter id="_Rjt7YEDSEeOGibAg3FzzjQ" name="TalendDate"/>
+    <routinesParameter id="_RjwXoEDSEeOGibAg3FzzjQ" name="TalendString"/>
+  </parameters>
+  <node componentName="tHttpRequest" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="160" posY="288">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tHttpRequest_1"/>
+    <elementParameter field="CHECK" name="START" value="true"/>
+    <elementParameter field="TEXT" name="URI" value="&quot;http://finance.yahoo.com/d/quotes.csv?s=GOOG&amp;f=snab&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="METHOD_CHOSED" value="GET"/>
+    <elementParameter field="FILE" name="POST_PARAMS_FROM_FILE" value=""/>
+    <elementParameter field="CHECK" name="OUT_TO_FILE" value="false"/>
+    <elementParameter field="FILE" name="OUT_FILE_NAME" value=""/>
+    <elementParameter field="TABLE" name="HEADERS"/>
+    <elementParameter field="CHECK" name="NEED_AUTHENTICATION" value="false"/>
+    <elementParameter field="TEXT" name="USR" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PWD" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="CHECK" name="INFORMATION" value="false"/>
+    <elementParameter field="MEMO" name="COMMENT" value=""/>
+    <elementParameter field="CHECK" name="VALIDATION_RULES" value="false"/>
+    <metadata connector="FLOW" name="tHttpRequest_1">
+      <column defaultValue="" key="false" length="0" name="ResponseContent" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="384" posY="288">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogRow_1"/>
+    <elementParameter field="CHECK" name="SUBTREE_START" value="true"/>
+    <elementParameter field="CHECK" name="END_OF_FLOW" value="true"/>
+    <elementParameter field="RADIO" name="BASIC_MODE" value="true"/>
+    <elementParameter field="RADIO" name="TABLE_PRINT" value="false"/>
+    <elementParameter field="RADIO" name="VERTICAL" value="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE" value="true"/>
+    <elementParameter field="RADIO" name="PRINT_LABEL" value="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE_LABEL" value="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;|&quot;"/>
+    <elementParameter field="CHECK" name="PRINT_HEADER" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_UNIQUE_NAME" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_COLNAMES" value="false"/>
+    <elementParameter field="CHECK" name="USE_FIXED_LENGTH" value="false"/>
+    <elementParameter field="TABLE" name="LENGTHS"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="CHECK" name="INFORMATION" value="false"/>
+    <elementParameter field="MEMO" name="COMMENT" value=""/>
+    <elementParameter field="CHECK" name="VALIDATION_RULES" value="false"/>
+    <metadata connector="FLOW" name="tLogRow_1"/>
+  </node>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tHttpRequest_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="160;190;240"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="220;220;250"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogRow_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="160;190;240"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="220;220;250"/>
+  </subjob>
+</talendfile:ProcessType>

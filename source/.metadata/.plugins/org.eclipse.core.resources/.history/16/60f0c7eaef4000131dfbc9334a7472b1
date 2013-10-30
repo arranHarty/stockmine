@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendProperties="http://www.talend.org/properties">
+  <TalendProperties:Property xmi:id="_BZSg40DiEeOfA_gk2MO8Dw" id="_BZJW8EDiEeOfA_gk2MO8Dw" label="stock_index" purpose="indexes of stocks to be examined" creationDate="2013-10-29T22:35:25.151+0000" modificationDate="2013-10-29T22:34:42.429+0000" version="0.1" statusCode="" item="_BZSg5UDiEeOfA_gk2MO8Dw" displayName="stock_index">
+    <author href="../../talend.project#_E66n0EDSEeOGibAg3FzzjQ"/>
+  </TalendProperties:Property>
+  <TalendProperties:ItemState xmi:id="_BZSg5EDiEeOfA_gk2MO8Dw" path=""/>
+  <TalendProperties:DelimitedFileConnectionItem xmi:id="_BZSg5UDiEeOfA_gk2MO8Dw" property="_BZSg40DiEeOfA_gk2MO8Dw" state="_BZSg5EDiEeOfA_gk2MO8Dw">
+    <connection href="stock_index_0.1.item#_BZQrsEDiEeOfA_gk2MO8Dw"/>
+  </TalendProperties:DelimitedFileConnectionItem>
+</xmi:XMI>

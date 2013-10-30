@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendProperties="http://www.talend.org/properties">
+  <TalendProperties:Property xmi:id="_2egcFUDmEeOfA_gk2MO8Dw" id="_2ef1AEDmEeOfA_gk2MO8Dw" label="stock_indexes" purpose="contains the stock indexes to iterate through" creationDate="2013-10-29T23:09:59.376+0000" modificationDate="2013-10-29T23:08:06.594+0000" version="0.1" statusCode="" item="_2egcF0DmEeOfA_gk2MO8Dw" displayName="stock_indexes">
+    <author href="../../talend.project#_E66n0EDSEeOGibAg3FzzjQ"/>
+  </TalendProperties:Property>
+  <TalendProperties:ItemState xmi:id="_2egcFkDmEeOfA_gk2MO8Dw" path="" locked="true" lockDate="2013-10-29T23:14:59.266+0000">
+    <locker href="../../talend.project#_E66n0EDSEeOGibAg3FzzjQ"/>
+  </TalendProperties:ItemState>
+  <TalendProperties:DelimitedFileConnectionItem xmi:id="_2egcF0DmEeOfA_gk2MO8Dw" property="_2egcFUDmEeOfA_gk2MO8Dw" state="_2egcFkDmEeOfA_gk2MO8Dw">
+    <connection href="stock_indexes_0.1.item#_2egcEEDmEeOfA_gk2MO8Dw"/>
+  </TalendProperties:DelimitedFileConnectionItem>
+</xmi:XMI>

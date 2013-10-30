@@ -3,10 +3,8 @@
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="lib" path="/Users/arranhartgroves/Dropbox/thinkBA_employees/arran_hartgroves/deliverables/code/github/stockmine/source/.Java/lib/log4j-1.2.15.jar"/>
-	<classpathentry kind="lib" path="/Users/arranhartgroves/Dropbox/thinkBA_employees/arran_hartgroves/deliverables/code/github/stockmine/source/.Java/lib/commons-codec-1.3.jar"/>
-	<classpathentry kind="lib" path="/Users/arranhartgroves/Dropbox/thinkBA_employees/arran_hartgroves/deliverables/code/github/stockmine/source/.Java/lib/commons-logging-1.1.jar"/>
-	<classpathentry kind="lib" path="/Users/arranhartgroves/Dropbox/thinkBA_employees/arran_hartgroves/deliverables/code/github/stockmine/source/.Java/lib/commons-httpclient-3.0.1.jar"/>
-	<classpathentry kind="lib" path="/Users/arranhartgroves/Dropbox/thinkBA_employees/arran_hartgroves/deliverables/code/github/stockmine/source/.Java/lib/jcifs-1.3.0.jar"/>
+	<classpathentry kind="lib" path="/Users/arranhartgroves/Dropbox/thinkBA_employees/arran_hartgroves/deliverables/code/github/stockmine/source/.Java/lib/talend_file_enhanced_20070724.jar"/>
+	<classpathentry kind="lib" path="/Users/arranhartgroves/Dropbox/thinkBA_employees/arran_hartgroves/deliverables/code/github/stockmine/source/.Java/lib/talendcsv.jar"/>
 	<classpathentry kind="lib" path="/Users/arranhartgroves/Dropbox/thinkBA_employees/arran_hartgroves/deliverables/code/github/stockmine/source/.Java/lib/dom4j-1.6.1.jar"/>
 	<classpathentry kind="output" path="classes"/>
 </classpath>
