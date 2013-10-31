@@ -428,3 +428,127 @@ Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -keyring /Users/arran
 !ENTRY org.talend.platform.logging 1 0 2013-10-30 23:47:09.997
 !MESSAGE 2013-10-30 23:47:09,995 INFO  org.talend.repository.ui.login.LoginComposite  - validate updatesite...
 
+!SESSION 2013-10-30 23:56:40.075 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.6.0_65
+java.vendor=Apple Inc.
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -keyring /Users/arranhartgroves/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -keyring /Users/arranhartgroves/.eclipse_keyring -showlocation
+
+!ENTRY org.talend.platform.logging 1 0 2013-10-30 23:56:43.576
+!MESSAGE 2013-10-30 23:56:43,574 INFO  org.talend.repository.ui.login.LoginComposite  - validate updatesite...
+
+
+!ENTRY org.eclipse.core.resources 4 568 2013-10-30 23:57:38.936
+!MESSAGE Could not write metadata for '/.JETEmitters'.
+!STACK 0
+java.io.FileNotFoundException: /Users/arranhartgroves/Dropbox/thinkBA_employees/arran_hartgroves/deliverables/code/github/stockmine/source/.metadata/.plugins/org.eclipse.core.resources/.projects/.JETEmitters/.markers.snap (No such file or directory)
+	at java.io.FileOutputStream.openAppend(Native Method)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:192)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:116)
+	at org.eclipse.core.internal.localstore.SafeChunkyOutputStream.<init>(SafeChunkyOutputStream.java:43)
+	at org.eclipse.core.internal.localstore.SafeChunkyOutputStream.<init>(SafeChunkyOutputStream.java:39)
+	at org.eclipse.core.internal.resources.SaveManager.visitAndSnap(SaveManager.java:1662)
+	at org.eclipse.core.internal.resources.SaveManager.visitAndSnap(SaveManager.java:1742)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1145)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1087)
+	at org.eclipse.core.internal.resources.DelayedSnapshotJob.run(DelayedSnapshotJob.java:44)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.talend.platform.logging 1 0 2013-10-30 23:57:39.056
+!MESSAGE 2013-10-30 23:57:39,056 INFO  org.talend.core.repository.model.ProxyRepositoryFactory  - test@talend.com logged on stockmine
+
+
+!ENTRY org.talend.platform.logging 1 0 2013-10-30 23:57:39.734
+!MESSAGE 2013-10-30 23:57:39,734 INFO  org.talend.core.repository.ReadOnlyProjectConfirm  - ReadOnly confirm
+
+
+!ENTRY org.eclipse.core.net 1 0 2013-10-30 23:57:44.025
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.eclipse.core.resources 4 568 2013-10-30 23:57:44.085
+!MESSAGE Could not write metadata for '/.JETEmitters'.
+!STACK 0
+java.io.FileNotFoundException: /Users/arranhartgroves/Dropbox/thinkBA_employees/arran_hartgroves/deliverables/code/github/stockmine/source/.metadata/.plugins/org.eclipse.core.resources/.projects/.JETEmitters/.markers.snap (No such file or directory)
+	at java.io.FileOutputStream.openAppend(Native Method)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:192)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:116)
+	at org.eclipse.core.internal.localstore.SafeChunkyOutputStream.<init>(SafeChunkyOutputStream.java:43)
+	at org.eclipse.core.internal.localstore.SafeChunkyOutputStream.<init>(SafeChunkyOutputStream.java:39)
+	at org.eclipse.core.internal.resources.SaveManager.visitAndSnap(SaveManager.java:1662)
+	at org.eclipse.core.internal.resources.SaveManager.visitAndSnap(SaveManager.java:1742)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1145)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1087)
+	at org.eclipse.core.internal.resources.DelayedSnapshotJob.run(DelayedSnapshotJob.java:44)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.talend.designer.webservice 0 0 2013-10-30 23:57:46.724
+!MESSAGE one third party library file [/Applications/TOS_BD-r110020-V5.4.0/lib/java/jaxrpc.jar] was not found, it is required for bundle [org.talend.designer.webservice], please download it and place in [/Applications/TOS_BD-r110020-V5.4.0/lib/java]
+
+!ENTRY org.talend.platform.logging 1 0 2013-10-30 23:58:39.199
+!MESSAGE 2013-10-30 23:58:39,199 INFO  org.talend.designer.core.runprocess.Processor  - Command line: java -Xms256M -Xmx1024M -Dfile.encoding=UTF-8 -cp /Users/arranhartgroves/Dropbox/thinkBA_employees/arran_hartgroves/deliverables/code/github/stockmine/source/.Java/lib/commons-beanutils-1.8.3.jar:/Users/arranhartgroves/Dropbox/thinkBA_employees/arran_hartgroves/deliverables/code/github/stockmine/source/.Java/lib/commons-collections-3.2.1.jar:/Users/arranhartgroves/Dropbox/thinkBA_employees/arran_hartgroves/deliverables/code/github/stockmine/source/.Java/lib/commons-lang-2.6.jar:/Users/arranhartgroves/Dropbox/thinkBA_employees/arran_hartgroves/deliverables/code/github/stockmine/source/.Java/lib/commons-logging-1.1.1.jar:/Users/arranhartgroves/Dropbox/thinkBA_employees/arran_hartgroves/deliverables/code/github/stockmine/source/.Java/lib/dom4j-1.6.1.jar:/Users/arranhartgroves/Dropbox/thinkBA_employees/arran_hartgroves/deliverables/code/github/stockmine/source/.Java/lib/ezmorph-1.0.6.jar:/Users/arranhartgroves/Dropbox/thinkBA_employees/arran_hartgroves/deliverables/code/github/stockmine/source/.Java/lib/jaxen-1.1.1.jar:/Users/arranhartgroves/Dropbox/thinkBA_employees/arran_hartgroves/deliverables/code/github/stockmine/source/.Java/lib/json-lib-2.4-jdk15.jar:/Users/arranhartgroves/Dropbox/thinkBA_employees/arran_hartgroves/deliverables/code/github/stockmine/source/.Java/lib/mongo-java-driver-2.11.2.jar:/Users/arranhartgroves/Dropbox/thinkBA_employees/arran_hartgroves/deliverables/code/github/stockmine/source/.Java/lib/talend_file_enhanced_20070724.jar:/Users/arranhartgroves/Dropbox/thinkBA_employees/arran_hartgroves/deliverables/code/github/stockmine/source/.Java/lib/talendcsv.jar:/Users/arranhartgroves/Dropbox/thinkBA_employees/arran_hartgroves/deliverables/code/github/stockmine/source/.Java/lib/xom-1.2.7.jar:.:/Users/arranhartgroves/Dropbox/thinkBA_employees/arran_hartgroves/deliverables/code/github/stockmine/source/.Java/classes::/Users/arranhartgroves/Dropbox/thinkBA_employees/arran_hartgroves/deliverables/code/github/stockmine/source/.Java/lib: stockmine.yahoo_finance_http_request_0_1.yahoo_finance_http_request --context=Default --stat_port=3849
+
+
+!ENTRY org.talend.platform.logging 1 0 2013-10-30 23:59:08.100
+!MESSAGE 2013-10-30 23:59:08,100 INFO  org.talend.designer.core.runprocess.Processor  - Command line: java -Xms256M -Xmx1024M -Dfile.encoding=UTF-8 -cp /Users/arranhartgroves/Dropbox/thinkBA_employees/arran_hartgroves/deliverables/code/github/stockmine/source/.Java/lib/commons-beanutils-1.8.3.jar:/Users/arranhartgroves/Dropbox/thinkBA_employees/arran_hartgroves/deliverables/code/github/stockmine/source/.Java/lib/commons-collections-3.2.1.jar:/Users/arranhartgroves/Dropbox/thinkBA_employees/arran_hartgroves/deliverables/code/github/stockmine/source/.Java/lib/commons-lang-2.6.jar:/Users/arranhartgroves/Dropbox/thinkBA_employees/arran_hartgroves/deliverables/code/github/stockmine/source/.Java/lib/commons-logging-1.1.1.jar:/Users/arranhartgroves/Dropbox/thinkBA_employees/arran_hartgroves/deliverables/code/github/stockmine/source/.Java/lib/dom4j-1.6.1.jar:/Users/arranhartgroves/Dropbox/thinkBA_employees/arran_hartgroves/deliverables/code/github/stockmine/source/.Java/lib/ezmorph-1.0.6.jar:/Users/arranhartgroves/Dropbox/thinkBA_employees/arran_hartgroves/deliverables/code/github/stockmine/source/.Java/lib/jaxen-1.1.1.jar:/Users/arranhartgroves/Dropbox/thinkBA_employees/arran_hartgroves/deliverables/code/github/stockmine/source/.Java/lib/json-lib-2.4-jdk15.jar:/Users/arranhartgroves/Dropbox/thinkBA_employees/arran_hartgroves/deliverables/code/github/stockmine/source/.Java/lib/mongo-java-driver-2.11.2.jar:/Users/arranhartgroves/Dropbox/thinkBA_employees/arran_hartgroves/deliverables/code/github/stockmine/source/.Java/lib/talend_file_enhanced_20070724.jar:/Users/arranhartgroves/Dropbox/thinkBA_employees/arran_hartgroves/deliverables/code/github/stockmine/source/.Java/lib/talendcsv.jar:/Users/arranhartgroves/Dropbox/thinkBA_employees/arran_hartgroves/deliverables/code/github/stockmine/source/.Java/lib/xom-1.2.7.jar:.:/Users/arranhartgroves/Dropbox/thinkBA_employees/arran_hartgroves/deliverables/code/github/stockmine/source/.Java/classes::/Users/arranhartgroves/Dropbox/thinkBA_employees/arran_hartgroves/deliverables/code/github/stockmine/source/.Java/lib: stockmine.yahoo_finance_http_request_0_1.yahoo_finance_http_request --context=Default --stat_port=3908
+
+
+!ENTRY org.eclipse.core.resources 4 568 2013-10-31 00:03:02.220
+!MESSAGE Could not write metadata for '/.JETEmitters'.
+!STACK 0
+java.io.FileNotFoundException: /Users/arranhartgroves/Dropbox/thinkBA_employees/arran_hartgroves/deliverables/code/github/stockmine/source/.metadata/.plugins/org.eclipse.core.resources/.projects/.JETEmitters/.markers.snap (No such file or directory)
+	at java.io.FileOutputStream.openAppend(Native Method)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:192)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:116)
+	at org.eclipse.core.internal.localstore.SafeChunkyOutputStream.<init>(SafeChunkyOutputStream.java:43)
+	at org.eclipse.core.internal.localstore.SafeChunkyOutputStream.<init>(SafeChunkyOutputStream.java:39)
+	at org.eclipse.core.internal.resources.SaveManager.visitAndSnap(SaveManager.java:1662)
+	at org.eclipse.core.internal.resources.SaveManager.visitAndSnap(SaveManager.java:1742)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1145)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1087)
+	at org.eclipse.core.internal.resources.DelayedSnapshotJob.run(DelayedSnapshotJob.java:44)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.talend.platform.logging 1 0 2013-10-31 00:09:59.161
+!MESSAGE 2013-10-31 00:09:59,161 INFO  org.talend.designer.core.runprocess.Processor  - Command line: java -Xms256M -Xmx1024M -Dfile.encoding=UTF-8 -cp /Users/arranhartgroves/Dropbox/thinkBA_employees/arran_hartgroves/deliverables/code/github/stockmine/source/.Java/lib/commons-beanutils-1.8.3.jar:/Users/arranhartgroves/Dropbox/thinkBA_employees/arran_hartgroves/deliverables/code/github/stockmine/source/.Java/lib/commons-collections-3.2.1.jar:/Users/arranhartgroves/Dropbox/thinkBA_employees/arran_hartgroves/deliverables/code/github/stockmine/source/.Java/lib/commons-lang-2.6.jar:/Users/arranhartgroves/Dropbox/thinkBA_employees/arran_hartgroves/deliverables/code/github/stockmine/source/.Java/lib/commons-logging-1.1.1.jar:/Users/arranhartgroves/Dropbox/thinkBA_employees/arran_hartgroves/deliverables/code/github/stockmine/source/.Java/lib/dom4j-1.6.1.jar:/Users/arranhartgroves/Dropbox/thinkBA_employees/arran_hartgroves/deliverables/code/github/stockmine/source/.Java/lib/ezmorph-1.0.6.jar:/Users/arranhartgroves/Dropbox/thinkBA_employees/arran_hartgroves/deliverables/code/github/stockmine/source/.Java/lib/jaxen-1.1.1.jar:/Users/arranhartgroves/Dropbox/thinkBA_employees/arran_hartgroves/deliverables/code/github/stockmine/source/.Java/lib/json-lib-2.4-jdk15.jar:/Users/arranhartgroves/Dropbox/thinkBA_employees/arran_hartgroves/deliverables/code/github/stockmine/source/.Java/lib/mongo-java-driver-2.11.2.jar:/Users/arranhartgroves/Dropbox/thinkBA_employees/arran_hartgroves/deliverables/code/github/stockmine/source/.Java/lib/talend_file_enhanced_20070724.jar:/Users/arranhartgroves/Dropbox/thinkBA_employees/arran_hartgroves/deliverables/code/github/stockmine/source/.Java/lib/talendcsv.jar:/Users/arranhartgroves/Dropbox/thinkBA_employees/arran_hartgroves/deliverables/code/github/stockmine/source/.Java/lib/xom-1.2.7.jar:.:/Users/arranhartgroves/Dropbox/thinkBA_employees/arran_hartgroves/deliverables/code/github/stockmine/source/.Java/classes::/Users/arranhartgroves/Dropbox/thinkBA_employees/arran_hartgroves/deliverables/code/github/stockmine/source/.Java/lib: stockmine.yahoo_finance_http_request_0_1.yahoo_finance_http_request --context=Default --stat_port=3970
+
+
+!ENTRY org.talend.platform.logging 1 0 2013-10-31 00:10:38.649
+!MESSAGE 2013-10-31 00:10:38,648 INFO  org.talend.designer.core.runprocess.Processor  - Command line: java -Xms256M -Xmx1024M -Dfile.encoding=UTF-8 -cp /Users/arranhartgroves/Dropbox/thinkBA_employees/arran_hartgroves/deliverables/code/github/stockmine/source/.Java/lib/commons-beanutils-1.8.3.jar:/Users/arranhartgroves/Dropbox/thinkBA_employees/arran_hartgroves/deliverables/code/github/stockmine/source/.Java/lib/commons-collections-3.2.1.jar:/Users/arranhartgroves/Dropbox/thinkBA_employees/arran_hartgroves/deliverables/code/github/stockmine/source/.Java/lib/commons-lang-2.6.jar:/Users/arranhartgroves/Dropbox/thinkBA_employees/arran_hartgroves/deliverables/code/github/stockmine/source/.Java/lib/commons-logging-1.1.1.jar:/Users/arranhartgroves/Dropbox/thinkBA_employees/arran_hartgroves/deliverables/code/github/stockmine/source/.Java/lib/dom4j-1.6.1.jar:/Users/arranhartgroves/Dropbox/thinkBA_employees/arran_hartgroves/deliverables/code/github/stockmine/source/.Java/lib/ezmorph-1.0.6.jar:/Users/arranhartgroves/Dropbox/thinkBA_employees/arran_hartgroves/deliverables/code/github/stockmine/source/.Java/lib/jaxen-1.1.1.jar:/Users/arranhartgroves/Dropbox/thinkBA_employees/arran_hartgroves/deliverables/code/github/stockmine/source/.Java/lib/json-lib-2.4-jdk15.jar:/Users/arranhartgroves/Dropbox/thinkBA_employees/arran_hartgroves/deliverables/code/github/stockmine/source/.Java/lib/mongo-java-driver-2.11.2.jar:/Users/arranhartgroves/Dropbox/thinkBA_employees/arran_hartgroves/deliverables/code/github/stockmine/source/.Java/lib/talend_file_enhanced_20070724.jar:/Users/arranhartgroves/Dropbox/thinkBA_employees/arran_hartgroves/deliverables/code/github/stockmine/source/.Java/lib/talendcsv.jar:/Users/arranhartgroves/Dropbox/thinkBA_employees/arran_hartgroves/deliverables/code/github/stockmine/source/.Java/lib/xom-1.2.7.jar:.:/Users/arranhartgroves/Dropbox/thinkBA_employees/arran_hartgroves/deliverables/code/github/stockmine/source/.Java/classes::/Users/arranhartgroves/Dropbox/thinkBA_employees/arran_hartgroves/deliverables/code/github/stockmine/source/.Java/lib: stockmine.yahoo_finance_http_request_0_1.yahoo_finance_http_request --context=Default --stat_port=3935
+
+
+!ENTRY org.talend.platform.logging 1 0 2013-10-31 00:11:54.850
+!MESSAGE 2013-10-31 00:11:54,850 INFO  org.talend.designer.core.runprocess.Processor  - Command line: java -Xms256M -Xmx1024M -Dfile.encoding=UTF-8 -cp /Users/arranhartgroves/Dropbox/thinkBA_employees/arran_hartgroves/deliverables/code/github/stockmine/source/.Java/lib/commons-beanutils-1.8.3.jar:/Users/arranhartgroves/Dropbox/thinkBA_employees/arran_hartgroves/deliverables/code/github/stockmine/source/.Java/lib/commons-collections-3.2.1.jar:/Users/arranhartgroves/Dropbox/thinkBA_employees/arran_hartgroves/deliverables/code/github/stockmine/source/.Java/lib/commons-lang-2.6.jar:/Users/arranhartgroves/Dropbox/thinkBA_employees/arran_hartgroves/deliverables/code/github/stockmine/source/.Java/lib/commons-logging-1.1.1.jar:/Users/arranhartgroves/Dropbox/thinkBA_employees/arran_hartgroves/deliverables/code/github/stockmine/source/.Java/lib/dom4j-1.6.1.jar:/Users/arranhartgroves/Dropbox/thinkBA_employees/arran_hartgroves/deliverables/code/github/stockmine/source/.Java/lib/ezmorph-1.0.6.jar:/Users/arranhartgroves/Dropbox/thinkBA_employees/arran_hartgroves/deliverables/code/github/stockmine/source/.Java/lib/jaxen-1.1.1.jar:/Users/arranhartgroves/Dropbox/thinkBA_employees/arran_hartgroves/deliverables/code/github/stockmine/source/.Java/lib/json-lib-2.4-jdk15.jar:/Users/arranhartgroves/Dropbox/thinkBA_employees/arran_hartgroves/deliverables/code/github/stockmine/source/.Java/lib/mongo-java-driver-2.11.2.jar:/Users/arranhartgroves/Dropbox/thinkBA_employees/arran_hartgroves/deliverables/code/github/stockmine/source/.Java/lib/talend_file_enhanced_20070724.jar:/Users/arranhartgroves/Dropbox/thinkBA_employees/arran_hartgroves/deliverables/code/github/stockmine/source/.Java/lib/talendcsv.jar:/Users/arranhartgroves/Dropbox/thinkBA_employees/arran_hartgroves/deliverables/code/github/stockmine/source/.Java/lib/xom-1.2.7.jar:.:/Users/arranhartgroves/Dropbox/thinkBA_employees/arran_hartgroves/deliverables/code/github/stockmine/source/.Java/classes::/Users/arranhartgroves/Dropbox/thinkBA_employees/arran_hartgroves/deliverables/code/github/stockmine/source/.Java/lib: stockmine.yahoo_finance_http_request_0_1.yahoo_finance_http_request --context=Default --stat_port=3707
+
+
+!ENTRY org.eclipse.ui.ide 4 4 2013-10-31 00:12:44.995
+!MESSAGE Problems saving workspace
+
+!ENTRY org.eclipse.ui.ide 4 1 2013-10-31 00:12:44.995
+!MESSAGE Problems occurred while trying to save the state of the workbench.
+!SUBENTRY 1 org.eclipse.core.resources 4 568 2013-10-31 00:12:44.995
+!MESSAGE Could not write metadata for '/.JETEmitters'.
+!STACK 0
+java.io.FileNotFoundException: /Users/arranhartgroves/Dropbox/thinkBA_employees/arran_hartgroves/deliverables/code/github/stockmine/source/.metadata/.plugins/org.eclipse.core.resources/.projects/.JETEmitters/.markers (No such file or directory)
+	at java.io.FileOutputStream.open(Native Method)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:194)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:145)
+	at org.eclipse.core.internal.localstore.SafeFileOutputStream.<init>(SafeFileOutputStream.java:46)
+	at org.eclipse.core.internal.resources.SaveManager.visitAndSave(SaveManager.java:1551)
+	at org.eclipse.core.internal.resources.SaveManager.visitAndSave(SaveManager.java:1633)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1120)
+	at org.eclipse.core.internal.resources.Workspace.save(Workspace.java:2006)
+	at org.eclipse.ui.internal.ide.application.IDEWorkbenchAdvisor$5.run(IDEWorkbenchAdvisor.java:502)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:121)
+!SESSION 2013-10-31 00:12:53.034 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.6.0_65
+java.vendor=Apple Inc.
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -keyring /Users/arranhartgroves/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -keyring /Users/arranhartgroves/.eclipse_keyring -showlocation
+
+!ENTRY org.talend.platform.logging 1 0 2013-10-31 00:12:56.901
+!MESSAGE 2013-10-31 00:12:56,899 INFO  org.talend.repository.ui.login.LoginComposite  - validate updatesite...
+

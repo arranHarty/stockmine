@@ -104,7 +104,7 @@
 </folder>
 </info>
 <info folder="true" part="bottomLayout" ratio="0.5667539" ratioLeft="433" ratioRight="331" relationship="4" relative="org.eclipse.ui.editorss">
-<folder activePageID="org.talend.designer.core.ui.views.properties.ComponentSettingsView" appearance="2" expanded="2">
+<folder activePageID="org.talend.designer.runprocess.ui.views.processview" appearance="2" expanded="2">
 <page content="org.talend.designer.core.ui.views.jobsettings.JobSettingsView" label="Job"/>
 <page content="org.talend.designer.core.ui.views.ContextsView" label="Contexts"/>
 <page content="org.talend.designer.core.ui.views.properties.ComponentSettingsView" label="Component"/>
