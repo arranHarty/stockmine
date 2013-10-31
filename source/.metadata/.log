@@ -552,3 +552,69 @@ Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -keyring /Users/arran
 !ENTRY org.talend.platform.logging 1 0 2013-10-31 00:12:56.901
 !MESSAGE 2013-10-31 00:12:56,899 INFO  org.talend.repository.ui.login.LoginComposite  - validate updatesite...
 
+
+!ENTRY org.eclipse.core.resources 4 568 2013-10-31 00:14:00.357
+!MESSAGE Could not write metadata for '/.JETEmitters'.
+!STACK 0
+java.io.FileNotFoundException: /Users/arranhartgroves/Dropbox/thinkBA_employees/arran_hartgroves/deliverables/code/github/stockmine/source/.metadata/.plugins/org.eclipse.core.resources/.projects/.JETEmitters/.markers.snap (No such file or directory)
+	at java.io.FileOutputStream.openAppend(Native Method)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:192)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:116)
+	at org.eclipse.core.internal.localstore.SafeChunkyOutputStream.<init>(SafeChunkyOutputStream.java:43)
+	at org.eclipse.core.internal.localstore.SafeChunkyOutputStream.<init>(SafeChunkyOutputStream.java:39)
+	at org.eclipse.core.internal.resources.SaveManager.visitAndSnap(SaveManager.java:1662)
+	at org.eclipse.core.internal.resources.SaveManager.visitAndSnap(SaveManager.java:1742)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1145)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1087)
+	at org.eclipse.core.internal.resources.DelayedSnapshotJob.run(DelayedSnapshotJob.java:44)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.talend.platform.logging 1 0 2013-10-31 00:14:00.453
+!MESSAGE 2013-10-31 00:14:00,453 INFO  org.talend.core.repository.model.ProxyRepositoryFactory  - test@talend.com logged on stockmine
+
+
+!ENTRY org.talend.platform.logging 1 0 2013-10-31 00:14:01.066
+!MESSAGE 2013-10-31 00:14:01,066 INFO  org.talend.core.repository.ReadOnlyProjectConfirm  - ReadOnly confirm
+
+
+!ENTRY org.eclipse.core.net 1 0 2013-10-31 00:14:05.044
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.eclipse.core.resources 4 568 2013-10-31 00:14:05.092
+!MESSAGE Could not write metadata for '/.JETEmitters'.
+!STACK 0
+java.io.FileNotFoundException: /Users/arranhartgroves/Dropbox/thinkBA_employees/arran_hartgroves/deliverables/code/github/stockmine/source/.metadata/.plugins/org.eclipse.core.resources/.projects/.JETEmitters/.markers.snap (No such file or directory)
+	at java.io.FileOutputStream.openAppend(Native Method)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:192)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:116)
+	at org.eclipse.core.internal.localstore.SafeChunkyOutputStream.<init>(SafeChunkyOutputStream.java:43)
+	at org.eclipse.core.internal.localstore.SafeChunkyOutputStream.<init>(SafeChunkyOutputStream.java:39)
+	at org.eclipse.core.internal.resources.SaveManager.visitAndSnap(SaveManager.java:1662)
+	at org.eclipse.core.internal.resources.SaveManager.visitAndSnap(SaveManager.java:1742)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1145)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1087)
+	at org.eclipse.core.internal.resources.DelayedSnapshotJob.run(DelayedSnapshotJob.java:44)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.talend.designer.webservice 0 0 2013-10-31 00:14:06.959
+!MESSAGE one third party library file [/Applications/TOS_BD-r110020-V5.4.0/lib/java/jaxrpc.jar] was not found, it is required for bundle [org.talend.designer.webservice], please download it and place in [/Applications/TOS_BD-r110020-V5.4.0/lib/java]
+
+!ENTRY org.eclipse.ui.ide 4 4 2013-10-31 00:19:08.496
+!MESSAGE Problems saving workspace
+
+!ENTRY org.eclipse.ui.ide 4 1 2013-10-31 00:19:08.497
+!MESSAGE Problems occurred while trying to save the state of the workbench.
+!SUBENTRY 1 org.eclipse.core.resources 4 568 2013-10-31 00:19:08.497
+!MESSAGE Could not write metadata for '/.JETEmitters'.
+!STACK 0
+java.io.FileNotFoundException: /Users/arranhartgroves/Dropbox/thinkBA_employees/arran_hartgroves/deliverables/code/github/stockmine/source/.metadata/.plugins/org.eclipse.core.resources/.projects/.JETEmitters/.markers (No such file or directory)
+	at java.io.FileOutputStream.open(Native Method)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:194)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:145)
+	at org.eclipse.core.internal.localstore.SafeFileOutputStream.<init>(SafeFileOutputStream.java:46)
+	at org.eclipse.core.internal.resources.SaveManager.visitAndSave(SaveManager.java:1551)
+	at org.eclipse.core.internal.resources.SaveManager.visitAndSave(SaveManager.java:1633)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1120)
+	at org.eclipse.core.internal.resources.Workspace.save(Workspace.java:2006)
+	at org.eclipse.ui.internal.ide.application.IDEWorkbenchAdvisor$5.run(IDEWorkbenchAdvisor.java:502)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:121)
